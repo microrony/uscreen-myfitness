@@ -99,14 +99,24 @@
     {% endunless %} {% when '/' %} {% if user.guest %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block"
+      class="
+        top_menu--link
+        py-2
+        d-none d-md-inline-block
+        underline-hover-effect
+      "
     >
       {{ link.title }}
     </a>
     {% endif %} {% else %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block"
+      class="
+        top_menu--link
+        py-2
+        d-none d-md-inline-block
+        underline-hover-effect
+      "
     >
       {{ link.title }}
     </a>

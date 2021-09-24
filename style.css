@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Menu Style  */
+
+.hero_banner .top_menu .container a:hover {
+  color: #2bbcbe;
+}
+
+.top_menu .container a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.top_menu .container .top_menu--link {
+  margin-left: 50px;
+}
+
+.underline-hover-effect {
+  background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
+}
+.underline-hover-effect:hover {
+  --d: 100%;
+}
