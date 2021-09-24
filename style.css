@@ -7,6 +7,10 @@ body {
 
 /* Top Menu Style  */
 
+.hero_banner .top_menu--logo {
+  margin-right: 1rem;
+}
+
 .hero_banner .top_menu .container a:hover {
   color: #2bbcbe;
 }
@@ -27,4 +31,24 @@ body {
 }
 .underline-hover-effect:hover {
   --d: 100%;
+}
+
+.hero_banner .top_menu .container .common-page-button {
+  background-color: transparent;
+  border: 2px solid #2bbcbe;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  color: #2bbcbe;
+  transition: 0.5s;
+}
+
+.hero_banner .top_menu .container .common-page-button:hover {
+  background-color: #2bbcbe;
+  color: #fff;
+}
+
+.hero_banner .top_menu .container .sign-in {
+  margin-left: 1.5rem;
 }
