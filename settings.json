@@ -1,0 +1,901 @@
+{
+  "pages": [
+    {
+      "type": "index",
+      "title": "Main page",
+      "blocks": [
+        {
+          "id": "hero_banner",
+          "title": "Main Banner",
+          "description": "Settings for Main Banner",
+          "fields": [
+            {
+              "id": "fade",
+              "title": "shadows Fade",
+              "type": "range",
+              "min": 0.0,
+              "max": 0.9,
+              "value": "0",
+              "step": 0.1,
+              "hint": "Shadows image fade effect."
+            },
+            {
+              "id": "shadow_color",
+              "title": "Shadow Background Color",
+              "type": "color",
+              "value": "#000000"
+            },
+            {
+              "id": "image",
+              "title": "Background Image",
+              "type": "image",
+              "value": "https://unode1.s3.amazonaws.com/24958/uploads/5a116e2b-ee9d-42ee-a1da-912cc0926fb4.png",
+              "hint": "Recommended size: 2400x1304px"
+            }
+          ]
+        },
+        {
+          "id": "featured_category",
+          "title": "Promoted Category",
+          "description": "Modify the settings of your promoted category",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "FEATURED"
+            },
+            {
+              "id": "id",
+              "title": "Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "limit",
+              "title": "Programs Limit",
+              "type": "integer",
+              "value": 6,
+              "hint": "You can show up to 6 programs on the home page. You can modify program position inside a specific category."
+            },
+            {
+              "id": "cta_text",
+              "title": "CTA text",
+              "type": "string",
+              "value": "View all programs",
+              "hint": ""
+            },
+            {
+              "id": "cta_url",
+              "title": "CTA link",
+              "type": "link",
+              "value": "0-catalog",
+              "hint": "By default setup to catalog page."
+            }
+          ]
+        },
+        {
+          "id": "who_will_guid_you",
+          "title": "Who will guide you",
+          "description": "Settings for 'Who will guid you' section",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "WHO WILL GUIDE YOU?"
+            },
+            {
+              "id": "subtitle",
+              "title": "Subtitle",
+              "type": "text",
+              "value": "The best teachers always seem to have a few things in common: they see you, they hear you, and they encourage you forward without forcing your steps. They are there for you, in whatever way you need at the moment. Wanderlust provides just that: a carefully-curated faculty of yogic guides who will nurture your growth, in person and online."
+            },
+            {
+              "id": "iframe",
+              "title": "iframe",
+              "type": "text",
+              "value": "<iframe width='560' height='315' src='https://www.youtube.com/embed/LFWgRLC3iF4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+          ]
+        },
+        {
+          "id": "trending_categories",
+          "title": "All Series List",
+          "description": "Modify the settings of your All Series list",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "ALL SERIES"
+            },
+            {
+              "id": "element_1_image",
+              "title": "Block 1: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/nIXEaCrpSiqPk8SafgOR_category-1.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_1_title",
+              "title": "Block 1: Title",
+              "type": "string",
+              "value": "Back to the Core"
+            },
+            {
+              "id": "element_1_url",
+              "title": "Block 1: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_2_image",
+              "title": "Block 2: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/UbilCmtWR62iwiGRGkGU_category-2.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_2_title",
+              "title": "Block 2: Title",
+              "type": "string",
+              "value": "The Journey"
+            },
+            {
+              "id": "element_2_url",
+              "title": "Block 2: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_3_image",
+              "title": "Block 3: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/BYkeN15HTh29hSKAGgzc_category-3.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_3_title",
+              "title": "Block 3: Title",
+              "type": "string",
+              "value": "21 day Meditation Challenge"
+            },
+            {
+              "id": "element_3_url",
+              "title": "Block 3: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_4_image",
+              "title": "Block 4: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/rCbvKSPyTlepDUZX1dFS_category-4.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_4_title",
+              "title": "Block 4: Title",
+              "type": "string",
+              "value": "The Release"
+            },
+            {
+              "id": "element_4_url",
+              "title": "Block 4: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_5_image",
+              "title": "Block 5: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/eI5kMJkmRhmLSntEZIxJ_category-5.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_5_title",
+              "title": "Block 5: Title",
+              "type": "string",
+              "value": "21 day Yoga Challenge"
+            },
+            {
+              "id": "element_5_url",
+              "title": "Block 5: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_6_image",
+              "title": "Block 6: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/JWG3jVU9SZy710MXsjSH_category-6.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_6_title",
+              "title": "Block 6: Title",
+              "type": "string",
+              "value": "Wild in O'ahu"
+            },
+            {
+              "id": "element_6_url",
+              "title": "Block 6: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_7_image",
+              "title": "Block 7: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/Mue5iIYxTMiTqof6MuBc_category-7.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_7_title",
+              "title": "Block 7: Title",
+              "type": "string",
+              "value": "Flip to Flight"
+            },
+            {
+              "id": "element_7_url",
+              "title": "Block 7: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_8_image",
+              "title": "Block 8: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/2gnqbkNnTwW4itzhNKK7_category-8.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_8_title",
+              "title": "Block 8: Title",
+              "type": "string",
+              "value": "Creating Compass Pose"
+            },
+            {
+              "id": "element_8_url",
+              "title": "Block 8: Category",
+              "type": "category_select",
+              "value": null
+            },
+            {
+              "id": "element_9_image",
+              "title": "Block 9: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/Ugz2DonATOZNlNQz14Sj_category-9.jpg",
+              "hint": "Recommended size: 656x422px"
+            },
+            {
+              "id": "element_9_title",
+              "title": "Block 9: Title",
+              "type": "string",
+              "value": "Steady Strength"
+            },
+            {
+              "id": "element_9_url",
+              "title": "Block 9: Category",
+              "type": "category_select",
+              "value": null
+            }
+          ]
+        },
+        {
+          "id": "all_platforms",
+          "title": "All Platforms",
+          "description": "Modify the settings of your All Platforms",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "WORK OUT ANYWHERE, ANYTIME!"
+            },
+            {
+              "id": "subtitle",
+              "title": "Subtitle",
+              "type": "text",
+              "value": "Take your workouts with you. Get our FREE APPS for Android, iPhone and iPad. One sign-in for the website and all your devices. Also available on AppleTV!"
+            },
+            {
+              "id": "image",
+              "title": "Devices screen image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/XTeFo07ITBeLRGnZTfPA_theme-20-all-devices.jpg",
+              "hint": "Recommended size: 1600x1200px"
+            },
+            {
+              "id": "amazon",
+              "title": "Show/Hide Amazon",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "amazon_link",
+              "title": "Amazon link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            },
+            {
+              "id": "apple_tv",
+              "title": "Show/Hide Apple TV",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "apple_tv_link",
+              "title": "Apple TV link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            },
+            {
+              "id": "roku_tv",
+              "title": "Show/Hide Roku TV",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "roku_tv_link",
+              "title": "Roku TV link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            },
+            {
+              "id": "iphone",
+              "title": "Show/Hide Iphone",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "iphone_link",
+              "title": "iPhone link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            },
+            {
+              "id": "android",
+              "title": "Show/Hide Android",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "android_link",
+              "title": "Android link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            },
+            {
+              "id": "android_tv",
+              "title": "Show/Hide Android TV",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "android_tv_link",
+              "title": "Android TV link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            },
+            {
+              "id": "fire_tv",
+              "title": "Show/Hide Fire TV",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "fire_tv_link",
+              "title": "Fire TV link",
+              "type": "link",
+              "value": "/#all_platforms",
+              "hint": ""
+            }
+          ]
+        },
+        {
+          "id": "xtreme",
+          "title": "Follow us",
+          "description": "Modify the settings of your Follow us section",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "above_title",
+              "title": "Title",
+              "type": "string",
+              "value": "Follow us"
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "#yogaeveryday"
+            },
+            {
+              "id": "element_1_image",
+              "title": "Block 1: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/lEA4OA39RjKhu7LGxKBn_instagram-1.jpg",
+              "hint": "Recommended size: 576x358px"
+            },
+            {
+              "id": "element_1_url",
+              "title": "Block 1: Link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            },
+            {
+              "id": "element_2_image",
+              "title": "Block 2: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/HhF9xYEwS32LjtJLqBSS_instagram-2.jpg",
+              "hint": "Recommended size: 576x358px"
+            },
+            {
+              "id": "element_2_url",
+              "title": "Block 2: Link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            },
+            {
+              "id": "element_3_image",
+              "title": "Block 3: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/X3szDf5QVAO4E2Xh721A_instagram-3.jpg",
+              "hint": "Recommended size: 708x716px"
+            },
+            {
+              "id": "element_3_url",
+              "title": "Block 3: Link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            },
+            {
+              "id": "element_4_image",
+              "title": "Block 4: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/u3dnvDT8SWSTEdXWD60y_instagram-4.jpg",
+              "hint": "Recommended size: 576x358px"
+            },
+            {
+              "id": "element_4_url",
+              "title": "Block 4: Link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            },
+            {
+              "id": "element_5_image",
+              "title": "Block 5: Image",
+              "type": "image",
+              "value": "https://s3.amazonaws.com/unode1/assets/4832/OT4wcEeJTEaSWdLUdnk1_instagram-5.jpg",
+              "hint": "Recommended size: 576x358px"
+            },
+            {
+              "id": "element_5_url",
+              "title": "Block 5: Category",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            }
+          ]
+        },
+        {
+          "id": "stay_in_touch",
+          "title": "Stay in Touch",
+          "description": "Settings for Stay in Touch Section",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "Subscribe!"
+            },
+            {
+              "id": "subtitle",
+              "title": "Subtitle",
+              "type": "text",
+              "value": "Step by step instruction from the comfort of your home."
+            },
+            {
+              "id": "cta_text",
+              "title": "CTA text",
+              "type": "string",
+              "value": "Only $9.99 / month"
+            },
+            {
+              "id": "cta_url",
+              "title": "CTA link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            }
+          ]
+        },
+        {
+          "id": "seo",
+          "title": "SEO Settings",
+          "description": "Search Engine Optimization Settings.",
+          "fields": [
+            {
+              "id": "title",
+              "title": "Page Title",
+              "type": "string",
+              "value": "",
+              "hint": "The title tag of a web page is meant to be an accurate and concise description of a page's content."
+            },
+            {
+              "id": "description",
+              "title": "Page Description",
+              "type": "text",
+              "value": "",
+              "hint": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "catalog",
+      "title": "Catalog page",
+      "blocks": [
+        {
+          "id": "browse",
+          "title": "Browsing Settings",
+          "description": "Setup texts and filtering options.",
+          "fields": [
+            {
+              "id": "all_tab",
+              "title": "All Programs Tab Title",
+              "type": "string",
+              "value": "All programs"
+            },
+            {
+              "id": "library_tab",
+              "title": "Library Tab Title",
+              "type": "string",
+              "value": "My Library"
+            },
+            {
+              "id": "library_tab_show",
+              "title": "Library Tab Show",
+              "type": "boolean",
+              "value": true,
+              "hint": "You don't need 'My library' if you want to sell subscriptions only. (Will show when logged in only)."
+            },
+            {
+              "id": "favorites_tab",
+              "title": "Favorites Tab Title",
+              "type": "string",
+              "value": "Favorites"
+            },
+            {
+              "id": "search_placeholder",
+              "title": "Search Placeholder",
+              "type": "string",
+              "value": "Search programs"
+            },
+            {
+              "id": "filter_by_category",
+              "title": "Allow Filter by Category",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "filter_by_category_placeholder",
+              "title": "Category Filter Placeholder",
+              "type": "string",
+              "value": "Filter by category"
+            },
+            {
+              "id": "filter_by_author",
+              "title": "Allow Filter by Author",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "filter_by_author_placeholder",
+              "title": "Author Filter Placeholder",
+              "type": "string",
+              "value": "Filter by author"
+            },
+            {
+              "id": "load_more",
+              "title": "Pagination loading button",
+              "type": "string",
+              "value": "Load More..."
+            },
+            {
+              "id": "not_found",
+              "title": "Not Found Error",
+              "type": "string",
+              "value": "Sorry! Nothing was found."
+            },
+            {
+              "id": "newest",
+              "title": "Newest filter",
+              "type": "string",
+              "value": "Newest"
+            },
+            {
+              "id": "latest",
+              "title": "Latest filter",
+              "type": "string",
+              "value": "Oldest"
+            }
+          ]
+        },
+        {
+          "id": "seo",
+          "title": "SEO Settings",
+          "description": "Search Engine Optimization Settings.",
+          "fields": [
+            {
+              "id": "title",
+              "title": "Page Title",
+              "type": "string",
+              "value": "The title tag of a web page is meant to be an accurate and concise description of a page's content."
+            },
+            {
+              "id": "description",
+              "title": "Page Description",
+              "type": "text",
+              "value": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "program",
+      "title": "Content page",
+      "blocks": [
+        {
+          "id": "player_texts",
+          "title": "Player",
+          "description": "Settings for your player",
+          "fields": [
+            {
+              "id": "player_color",
+              "title": "Player Control Colors",
+              "type": "color",
+              "value": "#3caab5",
+              "hint": "Primary color used on player elements."
+            },
+            {
+              "id": "cta_title",
+              "title": "CTA Title",
+              "type": "string",
+              "value": "Purchase to Continue"
+            },
+            {
+              "id": "cta_text",
+              "title": "CTA Text",
+              "type": "string",
+              "value": "Get access to this class and train your new skills."
+            },
+            {
+              "id": "cta_button",
+              "title": "CTA Button Text",
+              "type": "string",
+              "value": "Get Access Now"
+            }
+          ]
+        },
+        {
+          "id": "description",
+          "title": "Description area",
+          "description": "Settings for program description area",
+          "fields": [
+            {
+              "id": "about_title",
+              "title": "About program Title",
+              "type": "string",
+              "value": "About Program"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "author",
+      "title": "Author page",
+      "blocks": [
+        {
+          "id": "author_info",
+          "title": "Author Information",
+          "description": "Settings for your author page",
+          "fields": [
+            {
+              "id": "title",
+              "title": "Page Title",
+              "type": "string",
+              "value": "My Classes"
+            },
+            {
+              "id": "button_text",
+              "title": "Button Text",
+              "type": "string",
+              "value": "Browse All"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "title": "Category page",
+      "blocks": [
+        {
+          "id": "category_button",
+          "title": "Category button",
+          "description": "Settings for your category button",
+          "fields": [
+            {
+              "id": "button_text",
+              "title": "Button Text",
+              "type": "string",
+              "value": "Browse All"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "common_blocks": [
+    {
+      "id": "header",
+      "title": "Header",
+      "description": "Settings for Header block",
+      "fields": [
+        {
+          "id": "logo",
+          "title": "Logo",
+          "type": "image",
+          "value": "https://unode1.s3.amazonaws.com/24958/uploads/f4352098-d8ba-4907-a251-a7b0390e4f88.svg",
+          "hint": ""
+        },
+        {
+          "id": "logo_size",
+          "title": "Logo Size",
+          "type": "range",
+          "min": 10,
+          "max": 100,
+          "value": "57",
+          "hint": "Add logo size"
+        },
+        {
+          "id": "background_color",
+          "title": "Header Background Color",
+          "type": "color",
+          "value": "#f6f5f6",
+          "hint": "Note: background color works with every page except Home page."
+        },
+        {
+          "id": "links_color",
+          "title": "Header Links Color",
+          "type": "color",
+          "value": "#141516",
+          "hint": "Note: Header Links color works with every page except Home page."
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "title": "Footer",
+      "description": "Settings for Footer block",
+      "fields": [
+        {
+          "id": "copyright",
+          "title": "Copyright",
+          "type": "string",
+          "value": "© Acme, Inc. 2018"
+        },
+        {
+          "id": "facebook",
+          "title": "Facebook Link",
+          "type": "string",
+          "value": "https://facebook.com"
+        },
+        {
+          "id": "twitter",
+          "title": "Twitter Link",
+          "type": "string",
+          "value": "https://twitter.com"
+        },
+        {
+          "id": "instagram",
+          "title": "Instagram Link",
+          "type": "string",
+          "value": "https://instagram.com"
+        },
+        {
+          "id": "youtube",
+          "title": "Youtube Link",
+          "type": "string",
+          "value": "https://youtube.com"
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "description": "Global Settings",
+      "fields": [
+        {
+          "id": "background_color",
+          "title": "Background Color",
+          "type": "color",
+          "value": "#ffffff",
+          "hint": "Background color used over the whole theme."
+        },
+        {
+          "id": "primary_color",
+          "title": "Primary Color",
+          "type": "color",
+          "value": "#3caab5",
+          "hint": "Primary color used over the whole theme."
+        },
+        {
+          "id": "program_card_author",
+          "title": "Show Author Name",
+          "type": "boolean",
+          "value": true,
+          "hint": "Show author name on program card."
+        },
+        {
+          "id": "program_card_duration",
+          "title": "Show Program Duration",
+          "type": "boolean",
+          "value": true,
+          "hint": "Show program duration on program card."
+        }
+      ]
+    }
+  ]
+}
