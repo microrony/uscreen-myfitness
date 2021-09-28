@@ -1,29 +1,22 @@
-<div class="hero_banner">
-  <div class="hero_banner--main">
-    {% include 'top_menu' %}
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="{{ settings.page_blocks.hero_banner.image1 | image_url }}"
-            alt=""
-          />
-          <img
-            src="{{ settings.page_blocks.hero_banner.logo | image_url }}"
-            alt=""
-            class="banner-swiper-logo"
-          />
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="{{ settings.page_blocks.hero_banner.image2 | image_url }}"
-            alt=""
-          />
-        </div>
+<section class="stay_in_touch stay-in-touch">
+  <div class="container">
+    <div class="stay-in-touch--content">
+      <div>
+        <h2 class="stay-in-touch--title">
+          {{ settings.page_blocks.stay_in_touch.title }}
+        </h2>
+        <p class="stay-in-touch--subtitle">
+          {{ settings.page_blocks.stay_in_touch.subtitle }}
+        </p>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+      <div>
+        <a
+          href="{{ settings.page_blocks.stay_in_touch.cta_url | link }}"
+          class="btn btn--primary btn--width"
+        >
+          {{ settings.page_blocks.stay_in_touch.cta_text }}
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</section>

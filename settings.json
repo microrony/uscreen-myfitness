@@ -26,6 +26,44 @@
             }
           ]
         },
+				{
+          "id": "our_pricing_plan",
+          "title": "Our Pricing Plan",
+          "description": "Settings for Our Pricing Plan Section",
+          "fields": [
+            {
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "title",
+              "title": "Title",
+              "type": "string",
+              "value": "Subscribe!"
+            },
+            {
+              "id": "subtitle",
+              "title": "Subtitle",
+              "type": "text",
+              "value": "Step by step instruction from the comfort of your home."
+            },
+            {
+              "id": "cta_text",
+              "title": "CTA text",
+              "type": "string",
+              "value": "Only $9.99 / month"
+            },
+            {
+              "id": "cta_url",
+              "title": "CTA link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            }
+          ]
+        },
         {
           "id": "featured_category",
           "title": "Promoted Category",
@@ -505,44 +543,6 @@
             {
               "id": "element_5_url",
               "title": "Block 5: Category",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            }
-          ]
-        },
-        {
-          "id": "stay_in_touch",
-          "title": "Stay in Touch",
-          "description": "Settings for Stay in Touch Section",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "Subscribe!"
-            },
-            {
-              "id": "subtitle",
-              "title": "Subtitle",
-              "type": "text",
-              "value": "Step by step instruction from the comfort of your home."
-            },
-            {
-              "id": "cta_text",
-              "title": "CTA text",
-              "type": "string",
-              "value": "Only $9.99 / month"
-            },
-            {
-              "id": "cta_url",
-              "title": "CTA link",
               "type": "link",
               "value": "0-join",
               "hint": "By default setup to join subscription page."
