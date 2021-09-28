@@ -98,3 +98,12 @@ body {
 .hero_banner .hero_banner--main .swiper-button-prev {
   left: 100px;
 }
+
+.hero_banner .hero_banner--main .banner-swiper-logo {
+  position: absolute;
+  z-index: 50;
+  height: 500px;
+  width: 500px;
+  top: 0;
+  display: none;
+}

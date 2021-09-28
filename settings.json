@@ -10,27 +10,19 @@
           "description": "Settings for Main Banner",
           "fields": [
             {
-              "id": "fade",
-              "title": "shadows Fade",
-              "type": "range",
-              "min": 0.0,
-              "max": 0.9,
-              "value": "0",
-              "step": 0.1,
-              "hint": "Shadows image fade effect."
+              "id": "logo",
+              "title": "Logo",
+              "type": "image"
             },
-            {
-              "id": "shadow_color",
-              "title": "Shadow Background Color",
-              "type": "color",
-              "value": "#000000"
+						{
+              "id": "image1",
+              "title": "Image 1",
+              "type": "image"
             },
-            {
-              "id": "image",
-              "title": "Background Image",
-              "type": "image",
-              "value": "https://unode1.s3.amazonaws.com/24958/uploads/5a116e2b-ee9d-42ee-a1da-912cc0926fb4.png",
-              "hint": "Recommended size: 2400x1304px"
+						{
+              "id": "image2",
+              "title": "Image 2",
+              "type": "image"
             }
           ]
         },
