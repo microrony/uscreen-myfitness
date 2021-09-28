@@ -50,5 +50,22 @@ body {
 }
 
 .hero_banner .top_menu .container .sign-in {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* Main Banner Style */
+
+.hero_banner .hero_banner--main {
+  position: relative;
+}
+
+.hero_banner .hero_banner--main .top_menu {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+}
+
+.hero_banner .hero_banner--main .swiper-pagination-progressbar {
+  background-color: #000;
+  height: 10px;
 }

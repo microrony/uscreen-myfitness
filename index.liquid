@@ -1,0 +1,23 @@
+<div class="hero_banner">
+  <div class="hero_banner--main">
+    {% include 'top_menu' %}
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="{{ settings.page_blocks.hero_banner.image | image_url }}"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="{{ settings.page_blocks.hero_banner.image | image_url }}"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
