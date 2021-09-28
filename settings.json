@@ -17,12 +17,14 @@
 						{
               "id": "image1",
               "title": "Image 1",
-              "type": "image"
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
             },
 						{
               "id": "image2",
               "title": "Image 2",
-              "type": "image"
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
             }
           ]
         },
