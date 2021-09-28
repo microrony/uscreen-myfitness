@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+:root {
+  --primaty-color: #2bbcbe;
+  --swiper-navigation-size: 80px;
+}
+
 html,
 body {
   font-family: 'Poppins', sans-serif;
@@ -12,7 +17,7 @@ body {
 }
 
 .hero_banner .top_menu .container a:hover {
-  color: #2bbcbe;
+  color: var(--primaty-color);
 }
 
 .top_menu .container a {
@@ -35,17 +40,17 @@ body {
 
 .hero_banner .top_menu .container .common-page-button {
   background-color: transparent;
-  border: 2px solid #2bbcbe;
+  border: 2px solid var(--primaty-color);
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   padding: 0.5rem 2rem;
-  color: #2bbcbe;
+  color: var(--primaty-color);
   transition: 0.5s;
 }
 
 .hero_banner .top_menu .container .common-page-button:hover {
-  background-color: #2bbcbe;
+  background-color: var(--primaty-color);
   color: #fff;
 }
 
@@ -67,5 +72,29 @@ body {
 
 .hero_banner .hero_banner--main .swiper-pagination-progressbar {
   background-color: #000;
-  height: 10px;
+}
+
+.hero_banner
+  .hero_banner--main
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
+  background-color: var(--primaty-color);
+}
+
+.hero_banner .hero_banner--main .swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+.hero_banner .hero_banner--main .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 80px;
+}
+
+.hero_banner .hero_banner--main .swiper-button-next {
+  right: 100px;
+}
+
+.hero_banner .hero_banner--main .swiper-button-prev {
+  left: 100px;
 }
