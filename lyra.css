@@ -4377,38 +4377,5 @@ html {
     margin-top: 20px;
   }
 }
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: Rubik, sans-serif;
-  color: #060606;
-  background: #fff;
-}
-a,
-a:active,
-a:hover {
-  text-decoration: none;
-}
-.page {
-  min-height: 100vh;
-  position: relative;
-}
-.hidden {
-  display: none !important;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: Rubik, sans-serif;
-  font-weight: 500;
-  color: #060606;
-}
-p {
-  font-weight: 400;
-  color: #060606;
-  line-height: 1.5;
-}
 
 /*# sourceMappingURL=main.css.map*/

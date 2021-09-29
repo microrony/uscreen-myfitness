@@ -43,23 +43,108 @@
               "id": "title",
               "title": "Title",
               "type": "string",
-              "value": "Subscribe!"
+              "value": "Our Pricing Plan"
             },
             {
               "id": "subtitle",
               "title": "Subtitle",
               "type": "text",
-              "value": "Step by step instruction from the comfort of your home."
+              "value": "Subscribe for Online Fitness, Pilates, Yoga and Dance classes – practice whenever and wherever you want!"
             },
             {
-              "id": "cta_text",
-              "title": "CTA text",
+              "id": "card1_title",
+              "title": "Card 1: Title",
               "type": "string",
-              "value": "Only $9.99 / month"
+              "value": "3 Month"
+            },
+						{
+              "id": "card1_subtitle",
+              "title": "Card 1: Subtitle",
+              "type": "string",
+              "value": "Subscription"
+            },
+						{
+              "id": "card1_currency",
+              "title": "Card 1: Currency",
+              "type": "string",
+              "value": "US$"
+            },
+						{
+              "id": "card1_amount",
+              "title": "Card 1: Amount",
+              "type": "string",
+              "value": "30"
+            },
+						{
+              "id": "card1_save_text",
+              "title": "Card 1: Save Text",
+              "type": "string",
+              "value": "Save 20%"
+            },
+						{
+              "id": "card1_trial_text",
+              "title": "Card 1: Trial Text",
+              "type": "text",
+              "value": "7-day free trial Renews automatically Cancel anytime"
+            },
+						{
+              "id": "card1_button_text",
+              "title": "Card 1: Button Text",
+              "type": "string",
+              "value": "Start your free trial"
             },
             {
-              "id": "cta_url",
-              "title": "CTA link",
+              "id": "card1_button_url",
+              "title": "Card 1: Button Link",
+              "type": "link",
+              "value": "0-join",
+              "hint": "By default setup to join subscription page."
+            },
+						{
+              "id": "card2_title",
+              "title": "Card 2: Title",
+              "type": "string",
+              "value": "12 Month"
+            },
+						{
+              "id": "card2_subtitle",
+              "title": "Card 2: Subtitle",
+              "type": "string",
+              "value": "Subscription"
+            },
+						{
+              "id": "card2_currency",
+              "title": "Card 2: Currency",
+              "type": "string",
+              "value": "US$"
+            },
+						{
+              "id": "card2_amount",
+              "title": "Card 2: Amount",
+              "type": "string",
+              "value": "90"
+            },
+						{
+              "id": "card2_save_text",
+              "title": "Card 2: Save Text",
+              "type": "string",
+              "value": "Save 25%"
+            },
+						{
+              "id": "card2_trial_text",
+              "title": "Card 2: Trial Text",
+              "type": "text",
+              "value": "7-day free trial Renews automatically Cancel anytime"
+            },
+						{
+              "id": "card2_button_text",
+              "title": "Card 2: Button Text",
+              "type": "string",
+              "value": "Start your free trial"
+            },
+            {
+              "id": "card2_button_url",
+              "title": "Card 2: Button Link",
               "type": "link",
               "value": "0-join",
               "hint": "By default setup to join subscription page."
