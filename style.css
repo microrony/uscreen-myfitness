@@ -113,26 +113,19 @@ body {
 /* Our Pricing Plan Style */
 
 .our_pricing_plan {
-  background-color: var(--primary-color);
+  background: url('https://s3.amazonaws.com/unode1/assets/24958/Y9BXXE9oSy2OB2cR6MJw_2nd_sec_bg.png');
   color: var(--secondary-color);
 }
 
 .container .our-pricing-plan--content {
-  padding: 4rem 0;
 }
 
 .our-pricing-plan .our-pricing-plan--title {
-  font-weight: bold;
-  font-size: 52px;
-  text-align: center;
-  /* color: var(--secondary-color); */
 }
 
 .our-pricing-plan .our-pricing-plan--subtitle {
-  font-size: 18px;
-  text-align: center;
   color: var(--tertiary-color);
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .pricing-card .card-title {
@@ -140,15 +133,19 @@ body {
 }
 
 .pricing-card .card-amount {
-  font-weight: bold;
   font-size: 72px;
-  margin-left: 0.5rem;
 }
 
 .pricing-card .card-save-text {
   color: var(--primary-color);
+  min-height: 80px;
 }
 
 .pricing-card .card-trial-text {
   color: #85888e;
+  border-color: #eee;
+}
+
+.pricing-card .cta-button {
+  background-color: var(--primary-color);
 }
