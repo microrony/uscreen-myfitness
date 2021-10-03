@@ -249,19 +249,19 @@
               "id": "swiper_image1",
               "title": "Swiper Image 1",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/RmEjqPKTdWlhVewmRtBQ_about_swiper_img1.png"
             },
 						{
               "id": "swiper_image2",
               "title": "Swiper Image 2",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/RmEjqPKTdWlhVewmRtBQ_about_swiper_img1.png"
             },
 						{
               "id": "swiper_image3",
               "title": "Swiper Image 3",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/RmEjqPKTdWlhVewmRtBQ_about_swiper_img1.png"
             },
 						{
 							"id": "second_small_title_span",
@@ -279,19 +279,19 @@
               "id": "studio_image1",
               "title": "Studio Image 1",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/zsb31XTxRwqOuJSTZwQr_studio_img1.png"
             },
 						{
               "id": "studio_image2",
               "title": "Studio Image 2",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/tKnyCqehTpG8orkZMPcC_studio_img2.png"
             },
 						{
               "id": "studio_image3",
               "title": "Studio Image 3",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/jWXQqtvTHyADNZBIjTPX_studio_img3.png"
             },{
               "id": "button_text",
               "title": "Button Text",

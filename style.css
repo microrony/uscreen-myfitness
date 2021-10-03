@@ -10,6 +10,23 @@
 html,
 body {
   font-family: 'Poppins', sans-serif;
+  color: var(--secondary-color);
+}
+
+.bg_primary {
+  background-color: var(--primary-color);
+}
+
+.color_primary {
+  color: var(--primary-color);
+}
+
+.color_secondary {
+  color: var(--secondary-color);
+}
+
+.color_tertiary {
+  color: var(--tertiary-color);
 }
 
 /* Top Menu Style  */
@@ -111,7 +128,6 @@ body {
 
 .our_pricing_plan {
   background: url('https://s3.amazonaws.com/unode1/assets/24958/Y9BXXE9oSy2OB2cR6MJw_2nd_sec_bg.png');
-  color: var(--secondary-color);
 }
 
 .our-pricing-plan .our-pricing-plan--subtitle {
@@ -137,15 +153,21 @@ body {
   border-color: #eee;
 }
 
-.pricing-card .cta-button {
-  background-color: var(--primary-color);
-}
-
 /* Responsive Style */
 
 @media (min-width: 640px) {
 }
 @media (min-width: 768px) {
+  .md_big_title {
+    font-size: 3.25rem;
+  }
+
+  .md_small_title {
+    font-size: 2rem;
+  }
+
+  /* Home Section Style */
+
   .hero_banner--main .swiper-slide {
     height: 80vh;
   }
@@ -165,6 +187,8 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  /* Home Section Style */
+
   .hero_banner .hero_banner--main .swiper-button-next {
     right: 100px;
   }
@@ -174,6 +198,8 @@ body {
   }
 }
 @media (min-width: 1280px) {
+  /* Home Section Style */
+
   .hero_banner--main .swiper-slide {
     height: 100%;
   }
@@ -185,6 +211,8 @@ body {
   }
 }
 @media (min-width: 1536px) {
+  /* Home Section Style */
+
   .hero_banner .hero_banner--main .banner-swiper-logo {
     top: 20%;
     right: 25%;
