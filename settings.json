@@ -198,6 +198,114 @@
             }
           ]
         },
+				{
+					"id": "about",
+          "title": "About",
+          "description": "Settings for 'About' section",
+          "fields": [
+						{
+							"id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+						},
+						{
+							"id": "small_title",
+              "title": "Small Title",
+              "type": "string",
+              "value": "About"
+						},
+						{
+							"id": "big_title_span",
+              "title": "Big Title Span Text",
+              "type": "string",
+              "value": "MY Fitness"
+						},
+						{
+							"id": "big_title",
+              "title": "Big Title",
+              "type": "string",
+              "value": " - May Yang"
+						},
+						{
+							"id": "about_text1",
+              "title": "About: Text1",
+              "type": "text",
+              "value": "May Yang, the founder of My Fitness, has more than twenty years professional teaching experience in Fitness, Pilates, Yoga and Dance for both adults and kids.  She has been training, teaching and leading fitness events in Singapore, Australia, USA (New York), China, Vietnam and Botswana and set up her first MY Fitness studio in 2010."
+						},
+						{
+							"id": "about_text2",
+              "title": "About: Text2",
+              "type": "text",
+              "value": "May and her fitness routines have been featured in Shape, Tatler, WestEast, and Her World magazines; on “Morning Fitness” on Singapore TV; and in the Straits Times newspaper.  She has modelled for major brands including L’Oreal, Cartier, Nine West, Far East Organisation, DBS Bank, VISA, Singtel, Resorts World Sentosa, Vicks and McDonalds."
+						},
+						{
+							"id": "about_text3",
+              "title": "About: Text3",
+              "type": "text",
+              "value": "She is also a professional dancer, choreographer and stage performer having performed with the New York Ajkun Ballet Theatre, Ellen Sinopoli Modern Dance ,Company (New York) and a Sydney dance company among others."
+					  },
+						{
+              "id": "swiper_image1",
+              "title": "Swiper Image 1",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+            },
+						{
+              "id": "swiper_image2",
+              "title": "Swiper Image 2",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+            },
+						{
+              "id": "swiper_image3",
+              "title": "Swiper Image 3",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+            },
+						{
+							"id": "second_small_title_span",
+              "title": "Second Small Title Span Text",
+              "type": "string",
+              "value": "MY Fitness"
+						},
+						{
+							"id": "second_small_title",
+              "title": "Second Small Title",
+              "type": "string",
+              "value": " - Studios"
+						},
+						{
+              "id": "studio_image1",
+              "title": "Studio Image 1",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+            },
+						{
+              "id": "studio_image2",
+              "title": "Studio Image 2",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+            },
+						{
+              "id": "studio_image3",
+              "title": "Studio Image 3",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/FLHSAufTZGbd8E48pr41_home-banner.png"
+            },{
+              "id": "button_text",
+              "title": "Button Text",
+              "type": "string",
+              "value": "More about us"
+            },
+            {
+              "id": "button_url",
+              "title": "Button Link",
+              "type": "link",
+              "value": ""
+            }
+					]
+				},
         {
           "id": "who_will_guid_you",
           "title": "Who will guide you",

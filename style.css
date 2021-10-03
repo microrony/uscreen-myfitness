@@ -93,34 +93,25 @@ body {
   font-size: 80px;
 }
 
-.hero_banner .hero_banner--main .swiper-button-next {
+/* .hero_banner .hero_banner--main .swiper-button-next {
   right: 100px;
 }
 
 .hero_banner .hero_banner--main .swiper-button-prev {
   left: 100px;
-}
+} */
 
-.hero_banner .hero_banner--main .banner-swiper-logo {
-  position: absolute;
-  z-index: 50;
-  height: 500px;
-  width: 500px;
-  top: 0;
-  display: none;
-}
+/* .hero_banner .hero_banner--main .banner-swiper-logo {
+	top: 20%;
+	right: 25%;
+	height: 250px;
+} */
 
 /* Our Pricing Plan Style */
 
 .our_pricing_plan {
   background: url('https://s3.amazonaws.com/unode1/assets/24958/Y9BXXE9oSy2OB2cR6MJw_2nd_sec_bg.png');
   color: var(--secondary-color);
-}
-
-.container .our-pricing-plan--content {
-}
-
-.our-pricing-plan .our-pricing-plan--title {
 }
 
 .our-pricing-plan .our-pricing-plan--subtitle {
@@ -148,4 +139,55 @@ body {
 
 .pricing-card .cta-button {
   background-color: var(--primary-color);
+}
+
+/* Responsive Style */
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+  .hero_banner--main .swiper-slide {
+    height: 80vh;
+  }
+
+  .hero_banner .hero_banner--main .banner-swiper-logo {
+    top: 20%;
+    right: 10%;
+    height: 150px;
+  }
+
+  .hero_banner .hero_banner--main .swiper-button-next {
+    right: 60px;
+  }
+
+  .hero_banner .hero_banner--main .swiper-button-prev {
+    left: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero_banner .hero_banner--main .swiper-button-next {
+    right: 100px;
+  }
+
+  .hero_banner .hero_banner--main .swiper-button-prev {
+    left: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero_banner--main .swiper-slide {
+    height: 100%;
+  }
+
+  .hero_banner .hero_banner--main .banner-swiper-logo {
+    top: 20%;
+    right: 25%;
+    height: 200px;
+  }
+}
+@media (min-width: 1536px) {
+  .hero_banner .hero_banner--main .banner-swiper-logo {
+    top: 20%;
+    right: 25%;
+    height: 250px;
+  }
 }

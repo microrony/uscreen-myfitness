@@ -1,0 +1,31 @@
+<div class="hero_banner">
+  <div class="hero_banner--main">
+    {% include 'top_menu' %}
+    <div class="swiper-container overflow-x-hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="{{ settings.page_blocks.hero_banner.image1 | image_url }}"
+            alt=""
+            class="h-full object-cover"
+          />
+          <img
+            src="{{ settings.page_blocks.hero_banner.logo | image_url }}"
+            alt=""
+            class="banner-swiper-logo absolute top-0 z-10"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="{{ settings.page_blocks.hero_banner.image1 | image_url }}"
+            alt=""
+            class="h-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
