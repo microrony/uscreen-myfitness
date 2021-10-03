@@ -153,6 +153,11 @@ body {
   border-color: #eee;
 }
 
+/* About Section Style */
+.about {
+  background-color: #f7f7f7;
+}
+
 /* Responsive Style */
 
 @media (min-width: 640px) {

@@ -1,52 +1,77 @@
-<section class="about">
+<section class="about py-16">
   <div class="container">
     <div class="about--content">
-      <div>
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
         <div>
-          <div>
-            <h3>
+          <div class="mb-8">
+            <h3
+              class="text-2xl md_small_title text-center xl:text-left font-bold"
+            >
               {{ settings.page_blocks.about.small_title }}
             </h3>
-            <h2>
-              <span>{{ settings.page_blocks.about.big_title_span }}</span
+            <h2
+              class="text-4xl md_big_title text-center xl:text-left font-bold"
+            >
+              <span class="color_primary">{{
+                settings.page_blocks.about.big_title_span
+              }}</span
               >{{ settings.page_blocks.about.big_title }}
             </h2>
           </div>
-          <div>
-            <p>{{ settings.page_blocks.about.about_text1 }}</p>
-            <p>{{ settings.page_blocks.about.about_text2 }}</p>
-            <p>{{ settings.page_blocks.about.about_text3 }}</p>
+          <div class="space-y-6">
+            <p class="md:text-xl color_tertiary">
+              {{ settings.page_blocks.about.about_text1 }}
+            </p>
+            <p class="md:text-xl color_tertiary">
+              {{ settings.page_blocks.about.about_text2 }}
+            </p>
+            <p class="md:text-xl color_tertiary">
+              {{ settings.page_blocks.about.about_text3 }}
+            </p>
           </div>
         </div>
-        <div class="about-swiper-container">
+        <div class="about-swiper-container overflow-hidden">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
+                class="w-full"
                 src="{{ settings.page_blocks.about.swiper_image1 | image_url }}"
                 alt=""
               />
             </div>
             <div class="swiper-slide">
               <img
+                class="w-full"
                 src="{{ settings.page_blocks.about.swiper_image2 | image_url }}"
                 alt=""
               />
             </div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="{{ settings.page_blocks.about.swiper_image3 | image_url }}"
-              alt=""
-            />
+            <div class="swiper-slide">
+              <img
+                class="w-full"
+                src="{{ settings.page_blocks.about.swiper_image3 | image_url }}"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <h3>
-          <span> {{ settings.page_blocks.about.second_small_title_span }} </span
+      <div class="my-8">
+        <h3
+          class="
+            text-2xl
+            md_small_title
+            text-center
+            md:text-left
+            font-bold
+            leading-none
+          "
+        >
+          <span class="color_primary">
+            {{ settings.page_blocks.about.second_small_title_span }} </span
           >{{ settings.page_blocks.about.second_small_title }}
         </h3>
-        <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 my-8">
           <div>
             <img
               src="{{ settings.page_blocks.about.studio_image1 | image_url }}"
@@ -66,9 +91,12 @@
             />
           </div>
         </div>
-        <a href="{{ settings.page_blocks.about.button_url }}" role="button">{{
-          settings.page_blocks.about.button_text
-        }}</a>
+        <a
+          class="bg_primary py-2 px-8 text-white inline-block rounded font-bold"
+          href="{{ settings.page_blocks.about.button_url }}"
+          role="button"
+          >{{ settings.page_blocks.about.button_text }}</a
+        >
       </div>
     </div>
   </div>

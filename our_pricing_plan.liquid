@@ -16,10 +16,11 @@
         grid grid-cols-1
         lg:grid-cols-2
         gap-8
-        md:gap-16 md:mx-20
+        md:gap-16
+        justify-items-center
       "
     >
-      <div class="pricing-card bg-white p-8">
+      <div class="pricing-card bg-white p-8 max-w-md lg:justify-self-end">
         <h2 class="card-title">
           {{ settings.page_blocks.our_pricing_plan.card1_title }}
         </h2>
@@ -50,7 +51,7 @@
           {{ settings.page_blocks.our_pricing_plan.card1_button_text }}
         </a>
       </div>
-      <div class="pricing-card bg-white p-8">
+      <div class="pricing-card bg-white p-8 max-w-md lg:justify-self-start">
         <h2 class="card-title">
           {{ settings.page_blocks.our_pricing_plan.card2_title }}
         </h2>

@@ -10,3 +10,12 @@ var swiper = new Swiper('.swiper-container', {
   observer: true,
   observeParents: true,
 });
+
+var swiper = new Swiper('.about-swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  observer: true,
+  observeParents: true,
+});
