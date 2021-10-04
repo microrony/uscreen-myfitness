@@ -1,4 +1,4 @@
-let progressBar = document.querySelector('.hero-progress-bar');
+let heroProgressBar = document.querySelector('.hero-progress-bar');
 
 var swiper = new Swiper('.swiper-container', {
   autoplay: {
@@ -13,27 +13,47 @@ var swiper = new Swiper('.swiper-container', {
   },
   on: {
     init: function () {
-      progressBar.classList.remove('animate');
-      progressBar.classList.remove('active');
-      progressBar.classList.add('animate');
-      progressBar.classList.add('active');
+      heroProgressBar.classList.remove('animate');
+      heroProgressBar.classList.remove('active');
+      heroProgressBar.classList.add('animate');
+      heroProgressBar.classList.add('active');
     },
     slideChangeTransitionStart: function () {
-      progressBar.classList.remove('animate');
-      progressBar.classList.remove('active');
-      progressBar.classList.add('active');
+      heroProgressBar.classList.remove('animate');
+      heroProgressBar.classList.remove('active');
+      heroProgressBar.classList.add('active');
     },
     slideChangeTransitionEnd: function () {
-      progressBar.classList.add('animate');
+      heroProgressBar.classList.add('animate');
     },
   },
 });
 
+let aboutSectionProgressBar = document.querySelector(
+  '.about-section-progress-bar'
+);
+
 var swiper = new Swiper('.about-swiper-container', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'progressbar',
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
   },
-  observer: true,
-  observeParents: true,
+  speed: 500,
+  loop: true,
+  on: {
+    init: function () {
+      aboutSectionProgressBar.classList.remove('animate');
+      aboutSectionProgressBar.classList.remove('active');
+      aboutSectionProgressBar.classList.add('animate');
+      aboutSectionProgressBar.classList.add('active');
+    },
+    slideChangeTransitionStart: function () {
+      aboutSectionProgressBar.classList.remove('animate');
+      aboutSectionProgressBar.classList.remove('active');
+      aboutSectionProgressBar.classList.add('active');
+    },
+    slideChangeTransitionEnd: function () {
+      aboutSectionProgressBar.classList.add('animate');
+    },
+  },
 });
