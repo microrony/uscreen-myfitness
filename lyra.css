@@ -43,6 +43,8 @@ html {
 @media (min-width: 1200px) {
   .container {
     max-width: 1500px;
+    padding-right: 48px;
+    padding-left: 48px;
   }
 }
 .container-fluid {

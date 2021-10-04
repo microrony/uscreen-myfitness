@@ -30,33 +30,43 @@
             </p>
           </div>
         </div>
-        <div class="about-swiper-container overflow-hidden relative">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="w-full"
-                src="{{ settings.page_blocks.about.swiper_image1 | image_url }}"
-                alt=""
-              />
+        <div class="relative self-end">
+          <div class="about-swiper-container overflow-hidden relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="w-full"
+                  src="{{
+                    settings.page_blocks.about.swiper_image1 | image_url
+                  }}"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-full"
+                  src="{{
+                    settings.page_blocks.about.swiper_image2 | image_url
+                  }}"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="w-full"
+                  src="{{
+                    settings.page_blocks.about.swiper_image3 | image_url
+                  }}"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                class="w-full"
-                src="{{ settings.page_blocks.about.swiper_image2 | image_url }}"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="w-full"
-                src="{{ settings.page_blocks.about.swiper_image3 | image_url }}"
-                alt=""
-              />
+
+            <div class="about-section-progress-bar">
+              <span class="slide_progress-bar"></span>
             </div>
           </div>
-          <div class="about-section-progress-bar">
-            <span class="slide_progress-bar"></span>
-          </div>
+          <div class="swiper-pagination hidden md:block"></div>
         </div>
       </div>
       <div class="my-8">

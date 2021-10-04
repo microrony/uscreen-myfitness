@@ -7,6 +7,7 @@ var swiper = new Swiper('.swiper-container', {
   },
   speed: 500,
   loop: true,
+  grabCursor: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -34,12 +35,20 @@ let aboutSectionProgressBar = document.querySelector(
 );
 
 var swiper = new Swiper('.about-swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
   speed: 500,
   loop: true,
+  grabCursor: true,
   on: {
     init: function () {
       aboutSectionProgressBar.classList.remove('animate');

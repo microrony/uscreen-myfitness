@@ -196,13 +196,13 @@ body {
 
 .about-section-progress-bar {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   width: 100%;
   z-index: 1;
 }
 .about-section-progress-bar .slide_progress-bar {
   position: absolute;
-  height: 10px;
+  height: 5px;
   background: #ceebec;
   width: auto;
   clear: both;
@@ -262,6 +262,46 @@ body {
   .hero_banner .hero_banner--main .swiper-button-prev {
     left: 60px;
   }
+
+  /* About Section Style */
+
+  .about-section-progress-bar {
+    bottom: 10px;
+  }
+
+  .about-section-progress-bar .slide_progress-bar {
+    height: 10px;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets {
+    width: auto;
+    top: 50%;
+    right: -1.5rem;
+    left: unset;
+    bottom: unset;
+    transform: translateY(-50%);
+  }
+
+  .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    display: block;
+    margin: 1.25rem 0;
+    background-color: transparent;
+    border-radius: 0;
+    line-height: 1;
+    height: auto;
+    width: auto;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets
+    .swiper-pagination-bullet-active {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 }
 @media (min-width: 1024px) {
   /* Home Section Style */
@@ -286,6 +326,23 @@ body {
     right: 25%;
     height: 200px;
   }
+
+  /* About Section Style */
+
+  .swiper-pagination.swiper-pagination-bullets {
+    right: -1.75rem;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets
+    .swiper-pagination-bullet-active {
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 1536px) {
   /* Home Section Style */
@@ -294,5 +351,22 @@ body {
     top: 20%;
     right: 25%;
     height: 250px;
+  }
+
+  /* About Section Style */
+
+  .swiper-pagination.swiper-pagination-bullets {
+    right: -3rem;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    font-size: 1.25rem;
+    margin: 2rem 0;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets
+    .swiper-pagination-bullet-active {
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 2rem;
   }
 }
