@@ -338,9 +338,9 @@
           ]
         },
         {
-          "id": "trending_categories",
-          "title": "All Series List",
-          "description": "Modify the settings of your All Series list",
+          "id": "our_programs",
+          "title": "Our Programs",
+          "description": "Modify the settings of Our Programs Section",
           "fields": [
             {
               "id": "active",
@@ -352,179 +352,92 @@
               "id": "title",
               "title": "Title",
               "type": "string",
-              "value": "ALL SERIES"
+              "value": "Our Programs"
             },
             {
               "id": "element_1_image",
               "title": "Block 1: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/nIXEaCrpSiqPk8SafgOR_category-1.jpg",
-              "hint": "Recommended size: 656x422px"
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/CAOEaIJITWyKyDBgsDMw_program_img1.png"
             },
             {
               "id": "element_1_title",
               "title": "Block 1: Title",
               "type": "string",
-              "value": "Back to the Core"
-            },
-            {
-              "id": "element_1_url",
-              "title": "Block 1: Category",
-              "type": "category_select",
-              "value": null
+              "value": "MY PILATES"
             },
             {
               "id": "element_2_image",
               "title": "Block 2: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/UbilCmtWR62iwiGRGkGU_category-2.jpg",
-              "hint": "Recommended size: 656x422px"
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"
             },
             {
               "id": "element_2_title",
               "title": "Block 2: Title",
               "type": "string",
-              "value": "The Journey"
-            },
-            {
-              "id": "element_2_url",
-              "title": "Block 2: Category",
-              "type": "category_select",
-              "value": null
+              "value": "MY CARDIO"
             },
             {
               "id": "element_3_image",
               "title": "Block 3: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/BYkeN15HTh29hSKAGgzc_category-3.jpg",
-              "hint": "Recommended size: 656x422px"
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/zwnTj6x2R73J0WpKtONe_program_img3.png"
             },
             {
               "id": "element_3_title",
               "title": "Block 3: Title",
               "type": "string",
-              "value": "21 day Meditation Challenge"
-            },
-            {
-              "id": "element_3_url",
-              "title": "Block 3: Category",
-              "type": "category_select",
-              "value": null
+              "value": "MY DANCE"
             },
             {
               "id": "element_4_image",
               "title": "Block 4: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/rCbvKSPyTlepDUZX1dFS_category-4.jpg",
-              "hint": "Recommended size: 656x422px"
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/Ify87HEYSguTWMHdePNt_program_img4.png"
             },
             {
               "id": "element_4_title",
               "title": "Block 4: Title",
               "type": "string",
-              "value": "The Release"
-            },
-            {
-              "id": "element_4_url",
-              "title": "Block 4: Category",
-              "type": "category_select",
-              "value": null
+              "value": "MY FAMILY"
             },
             {
               "id": "element_5_image",
               "title": "Block 5: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/eI5kMJkmRhmLSntEZIxJ_category-5.jpg",
-              "hint": "Recommended size: 656x422px"
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/7gzbODKETxaiIAyiSjvj_program_img5.png"
             },
             {
               "id": "element_5_title",
               "title": "Block 5: Title",
               "type": "string",
-              "value": "21 day Yoga Challenge"
-            },
-            {
-              "id": "element_5_url",
-              "title": "Block 5: Category",
-              "type": "category_select",
-              "value": null
+              "value": "MY EQUIPMENT"
             },
             {
               "id": "element_6_image",
               "title": "Block 6: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/JWG3jVU9SZy710MXsjSH_category-6.jpg",
-              "hint": "Recommended size: 656x422px"
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/d0JfiIP1S5mJnX8eTIHR_program_img6.png"
             },
             {
               "id": "element_6_title",
               "title": "Block 6: Title",
               "type": "string",
-              "value": "Wild in O'ahu"
+              "value": "MY BODY"
             },
-            {
-              "id": "element_6_url",
-              "title": "Block 6: Category",
-              "type": "category_select",
-              "value": null
-            },
-            {
-              "id": "element_7_image",
-              "title": "Block 7: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/Mue5iIYxTMiTqof6MuBc_category-7.jpg",
-              "hint": "Recommended size: 656x422px"
-            },
-            {
-              "id": "element_7_title",
-              "title": "Block 7: Title",
-              "type": "string",
-              "value": "Flip to Flight"
-            },
-            {
-              "id": "element_7_url",
-              "title": "Block 7: Category",
-              "type": "category_select",
-              "value": null
-            },
-            {
-              "id": "element_8_image",
-              "title": "Block 8: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/2gnqbkNnTwW4itzhNKK7_category-8.jpg",
-              "hint": "Recommended size: 656x422px"
-            },
-            {
-              "id": "element_8_title",
-              "title": "Block 8: Title",
-              "type": "string",
-              "value": "Creating Compass Pose"
-            },
-            {
-              "id": "element_8_url",
-              "title": "Block 8: Category",
-              "type": "category_select",
-              "value": null
-            },
-            {
-              "id": "element_9_image",
-              "title": "Block 9: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/Ugz2DonATOZNlNQz14Sj_category-9.jpg",
-              "hint": "Recommended size: 656x422px"
-            },
-            {
-              "id": "element_9_title",
-              "title": "Block 9: Title",
-              "type": "string",
-              "value": "Steady Strength"
-            },
-            {
-              "id": "element_9_url",
-              "title": "Block 9: Category",
-              "type": "category_select",
-              "value": null
-            }
+						{
+							"id": "button_text",
+							"title": "Button Text",
+							"type": "string",
+							"value": "See all programs"
+						},
+						{
+							"id": "button_url",
+							"title": "Button Link",
+							"type": "link",
+							"value": "#"
+						}
           ]
         },
         {
