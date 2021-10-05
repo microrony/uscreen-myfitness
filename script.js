@@ -66,3 +66,18 @@ var swiper = new Swiper('.about-swiper-container', {
     },
   },
 });
+
+var swiper = new Swiper('.testimonials-swiper-container', {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  spaceBetween: 30,
+  speed: 500,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

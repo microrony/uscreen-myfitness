@@ -461,7 +461,7 @@
               "id": "testimonial1_image",
               "title": "Testimonail 1: Image",
               "type": "image",
-              "value": ""
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/PA6fEeB8Rx68Xy0q4Yvo_ms_nor.png"
 						},
 						{
               "id": "testimonial1_name",
@@ -485,7 +485,7 @@
               "id": "testimonial2_image",
               "title": "Testimonail 2: Image",
               "type": "image",
-              "value": ""
+              "value": "https://s3.amazonaws.com/unode1/assets/24958/PA6fEeB8Rx68Xy0q4Yvo_ms_nor.png"
 						},
 						{
               "id": "testimonial2_name",
