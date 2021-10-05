@@ -232,6 +232,10 @@ body {
 
 /* Our Programs Section Style */
 
+.our_programs .our_programs--content h3 {
+  letter-spacing: 0.02em;
+}
+
 /* Responsive Style */
 
 @media (min-width: 640px) {

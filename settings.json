@@ -440,6 +440,67 @@
 						}
           ]
         },
+				{
+					"id": "testimonials",
+          "title": "Testimonials",
+          "description": "Modify the settings of Testimonails Section",
+          "fields": [
+						{
+              "id": "active",
+              "title": "Show/Hide Section",
+              "type": "boolean",
+              "value": true
+            },
+						{
+              "id": "testimonial1_text",
+              "title": "Testimonail 1: Text",
+              "type": "text",
+              "value": "I am a cancer survivor and 2 years ago I stepped into the MY Fitness studio and asked May if Pilates can help me achieve me lifelong dream … to conquer one of Nepal’s greatest trekking trails.  2 years later, I am now both mentally and physically strong and here I am today standing on the Himalaya trail!  Thanks so much and see you when I get back!"
+						},
+						{
+              "id": "testimonial1_image",
+              "title": "Testimonail 1: Image",
+              "type": "image",
+              "value": ""
+						},
+						{
+              "id": "testimonial1_name",
+              "title": "Testimonail 1: Name",
+              "type": "string",
+              "value": "Ms Nor"
+						},
+						{
+              "id": "testimonial1_date",
+              "title": "Testimonail 1: Date",
+              "type": "string",
+              "value": "2019"
+						},
+						{
+              "id": "testimonial2_text",
+              "title": "Testimonail 2: Text",
+              "type": "text",
+              "value": "I am a cancer survivor and 2 years ago I stepped into the MY Fitness studio and asked May if Pilates can help me achieve me lifelong dream … to conquer one of Nepal’s greatest trekking trails.  2 years later, I am now both mentally and physically strong and here I am today standing on the Himalaya trail!  Thanks so much and see you when I get back!"
+						},
+						{
+              "id": "testimonial2_image",
+              "title": "Testimonail 2: Image",
+              "type": "image",
+              "value": ""
+						},
+						{
+              "id": "testimonial2_name",
+              "title": "Testimonail 2: Name",
+              "type": "string",
+              "value": "Ms Nor"
+						},
+						{
+              "id": "testimonial2_date",
+              "title": "Testimonail 2: Date",
+              "type": "string",
+              "value": "2019"
+						}
+					] 
+				},
         {
           "id": "all_platforms",
           "title": "All Platforms",
