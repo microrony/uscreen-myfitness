@@ -14,10 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .bg_primary {
   background-color: var(--primary-color);
 }
@@ -109,9 +105,14 @@ body {
   background-color: var(--primary-color);
 }
 
-.hero_banner .hero_banner--main .swiper-button-next,
-.swiper-button-prev {
+.hero_banner .hero_banner--main .swiper-button-next {
   color: rgba(255, 255, 255, 0.5);
+  top: 50%;
+}
+
+.hero_banner .hero_banner--main .swiper-button-prev {
+  color: rgba(255, 255, 255, 0.5);
+  top: 50%;
 }
 
 .hero_banner .hero_banner--main .swiper-button-next:after,
@@ -229,10 +230,36 @@ body {
   transition-duration: 5s;
 }
 
+.about-swiper-container .swiper-slide {
+  height: auto;
+}
+
+.about-swiper-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .studio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Our Programs Section Style */
 
 .our_programs .our_programs--content h3 {
   letter-spacing: 0.02em;
+}
+
+.our_programs .our_programs--content > div {
+  width: 100%;
+}
+
+.our_programs .our_programs--content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Testimonials Section Style */

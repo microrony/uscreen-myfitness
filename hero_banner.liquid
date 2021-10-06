@@ -6,7 +6,7 @@
         <div class="swiper-slide">
           <img
             src="{{ settings.page_blocks.hero_banner.image1 | image_url }}"
-            alt=""
+            alt="{{ settings.page_blocks.hero_banner.image1_alt }}"
             class="w-full h-full object-cover"
           />
           <img
@@ -18,8 +18,25 @@
         <div class="swiper-slide">
           <img
             src="{{ settings.page_blocks.hero_banner.image2 | image_url }}"
-            alt=""
+            alt="{{ settings.page_blocks.hero_banner.image2_alt }}"
             class="w-full h-full object-cover"
+          />
+          <img
+            src="{{ settings.page_blocks.hero_banner.logo | image_url }}"
+            alt=""
+            class="banner-swiper-logo absolute z-10 hidden md:inline"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="{{ settings.page_blocks.hero_banner.image3 | image_url }}"
+            alt="{{ settings.page_blocks.hero_banner.image3_alt }}"
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="{{ settings.page_blocks.hero_banner.logo | image_url }}"
+            alt=""
+            class="banner-swiper-logo absolute z-10 hidden md:inline"
           />
         </div>
       </div>

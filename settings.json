@@ -22,11 +22,71 @@
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
             },
 						{
+							"id": "image1_alt",
+              "title": "Image 1 Alternative Text",
+              "type": "string",
+							"value": "Alternative Text"
+						},
+						{
               "id": "image2",
               "title": "Image 2",
               "type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
-            }
+            },
+						{
+							"id": "image2_alt",
+              "title": "Image 2 Alternative Text",
+              "type": "string",
+							"value": "Alternative Text"
+						},
+						{
+              "id": "image3",
+              "title": "Image 3",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+            },
+						{
+							"id": "image3_alt",
+              "title": "Image 3 Alternative Text",
+              "type": "string",
+							"value": "Alternative Text"
+						},
+						{
+              "id": "image4",
+              "title": "Image 4",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+            },
+						{
+							"id": "image4_alt",
+              "title": "Image 4 Alternative Text",
+              "type": "string",
+							"value": "Alternative Text"
+						},
+						{
+              "id": "image5",
+              "title": "Image 5",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+            },
+						{
+							"id": "image5_alt",
+              "title": "Image 5 Alternative Text",
+              "type": "string",
+							"value": "Alternative Text"
+						},
+						{
+              "id": "image6",
+              "title": "Image 6",
+              "type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+            },
+						{
+							"id": "image6_alt",
+              "title": "Image 6 Alternative Text",
+              "type": "string",
+							"value": "Alternative Text"
+						}
           ]
         },
 				{
