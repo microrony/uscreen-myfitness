@@ -1,0 +1,90 @@
+<div class="footer bg_secondary">
+  <div class="container">
+    <div class="flex justify-between flex-col md:flex-row items-center">
+      <div class="top_menu--logo">
+        <a href="/">
+          {% if settings.footer.logo != "" %}
+          <img
+            src="{{ settings.footer.logo | image_url, width: 66 }}"
+            data-full="{{ settings.footer.logo | image_url, width: 132 }}"
+            srcset="{{ settings.footer.logo | image_url, width: 132 }},
+										{{ settings.footer.logo | image_url, width: 264 }} 2x"
+            data-controller="progressive"
+            data-target="progressive.image"
+            class="image preview"
+            alt="{{ storefront.title }}"
+            height="{{ settings.footer.logo_size }}px"
+            style="height: {{ settings.footer.logo_size }}px"
+          />
+          {% else %}
+          {{ storefront.title }}
+          {% endif %}
+        </a>
+      </div>
+      <div class="footer--links">
+        {% for link in navigation.groups.footer %} {% if link.dropdown %}
+        <div class="dropdown d-md-inline-block" data-controller="dropdown">
+          <div
+            class="dropdown--action"
+            data-target="dropdown.selector"
+            data-action="click->dropdown#toggle"
+          >
+            <a class="dropdown--head-link"
+              >{{ link.title }} <i class="fas fa-caret-down"></i
+            ></a>
+          </div>
+          <div class="dropdown--body hidden" data-target="dropdown.content">
+            {% for sub_link in link.links %}
+            <a href="{{ sub_link.url | link }}">{{ sub_link.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% else %} {% case link.url %} {% when '/login' %} {% if user.guest %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endif %} {% when '/dashboard' %} {% unless user.guest %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endunless %} {% when '/sign_out' %} {% unless user.guest %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endunless %} {% else %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endcase %} {% endif %} {% endfor %}
+      </div>
+
+      <div class="footer--social">
+        {% if settings.footer.facebook.size != 0 %}
+        <a href="{{ settings.footer.facebook }}" target="_blank" class="ms-6">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        {% endif %} {% if settings.footer.instagram.size != 0 %}
+        <a href="{{ settings.footer.instagram }}" target="_blank" class="ms-6">
+          <i class="fab fa-instagram"></i>
+        </a>
+        {% endif %} {% if settings.footer.youtube.size != 0 %}
+        <a href="{{ settings.footer.youtube }}" target="_blank" class="ms-6">
+          <i class="fab fa-youtube"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

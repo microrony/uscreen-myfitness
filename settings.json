@@ -993,22 +993,26 @@
       "description": "Settings for Footer block",
       "fields": [
         {
-          "id": "copyright",
-          "title": "Copyright",
-          "type": "string",
-          "value": "© Acme, Inc. 2018"
+          "id": "logo",
+          "title": "Logo",
+          "type": "image",
+          "value": "https://s3.amazonaws.com/unode1/assets/24958/maMDKeeeRRSEn2WwMpe5_logo.png",
+          "hint": ""
+        },
+        {
+          "id": "logo_size",
+          "title": "Logo Size",
+          "type": "range",
+          "min": 10,
+          "max": 100,
+          "value": "57",
+          "hint": "Add logo size"
         },
         {
           "id": "facebook",
           "title": "Facebook Link",
           "type": "string",
           "value": "https://facebook.com"
-        },
-        {
-          "id": "twitter",
-          "title": "Twitter Link",
-          "type": "string",
-          "value": "https://twitter.com"
         },
         {
           "id": "instagram",
