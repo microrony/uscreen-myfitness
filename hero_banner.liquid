@@ -7,24 +7,24 @@
           <img
             src="{{ settings.page_blocks.hero_banner.image1 | image_url }}"
             alt=""
-            class="h-full object-cover"
+            class="w-full h-full object-cover"
           />
           <img
             src="{{ settings.page_blocks.hero_banner.logo | image_url }}"
             alt=""
-            class="banner-swiper-logo absolute top-0 z-10"
+            class="banner-swiper-logo absolute z-10 hidden md:inline"
           />
         </div>
         <div class="swiper-slide">
           <img
-            src="{{ settings.page_blocks.hero_banner.image1 | image_url }}"
+            src="{{ settings.page_blocks.hero_banner.image2 | image_url }}"
             alt=""
-            class="h-full object-cover"
+            class="w-full h-full object-cover"
           />
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next hidden md:block"></div>
+      <div class="swiper-button-prev hidden md:block"></div>
 
       <div class="hero-progress-bar">
         <span class="slide_progress-bar"></span>

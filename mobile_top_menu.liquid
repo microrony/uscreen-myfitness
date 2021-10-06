@@ -1,34 +1,30 @@
-<div class="top_menu">
-  <div class="container">
-    <div class="top_menu--logo">
-      <a href="/">
-        {% if settings.header.logo != "" %}
-        <img
-          src="{{ settings.header.logo | image_url, width: 66 }}"
-          data-full="{{ settings.header.logo | image_url, width: 132 }}"
-          srcset="{{ settings.header.logo | image_url, width: 132 }},
-                {{ settings.header.logo | image_url, width: 264 }} 2x"
-          data-controller="progressive"
-          data-target="progressive.image"
-          class="image preview"
-          alt="{{ storefront.title }}"
-          height="{{ settings.header.logo_size }}px"
-          style="height: {{ settings.header.logo_size }}px"
-        />
-        {% else %}
-        {{ storefront.title }}
-        {% endif %}
-      </a>
-    </div>
-    {% include 'mobile_top_menu' %} {% for link in navigation.groups.main %} {%
-    if link.dropdown %}
-    <div class="dropdown d-none d-md-inline-block" data-controller="dropdown">
+<div
+  class="d-inline-block d-lg-none"
+  data-controller="mobile-menu"
+  style="margin-left: auto"
+>
+  <a class="top_menu--group py-2" data-action="mobile-menu#toggle">
+    <i class="fas fa-bars fa-2x"></i>
+  </a>
+  <div
+    class="inline-block d-md-none mobile_menu"
+    data-target="mobile-menu.content"
+  >
+    <a
+      class="mobile_menu--link mobile_menu--exit py-2"
+      data-action="mobile-menu#toggle"
+      style="text-align: center"
+    >
+      <i class="far fa-times-circle fa-2x"></i>
+    </a>
+    {% for link in navigation.groups.main %} {% if link.dropdown %}
+    <div class="dropdown" data-controller="dropdown">
       <div
-        class="dropdown--action"
+        class="mobile_menu--link"
         data-target="dropdown.selector"
         data-action="click->dropdown#toggle"
       >
-        <a class="dropdown--head-link">
+        <a>
           {{ link.title }}
           <svg
             width="10px"
@@ -69,61 +65,19 @@
     </div>
     {% else %} {% assign url = link.url | link %} {% case url %} {% when
     '/sign_in' %} {% if user.guest %}
-    <a
-      href="{{ link.url | link }}"
-      class="
-        top_menu--link
-        py-2
-        d-none d-lg-inline-block
-        common-page-button
-        sign-in
-      "
-    >
-      {{ link.title }}
-    </a>
-    {% endif %} {% when '/join' %} {% if user.guest %}
-    <a
-      href="{{ link.url | link }}"
-      class="ms-auto py-2 d-lg-flex d-none common-page-button"
-    >
+    <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>
     {% endif %} {% when '/dashboard' %} {% unless user.guest %}
-    <a
-      href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block"
-    >
+    <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>
     {% endunless %} {% when '/sign_out' %} {% unless user.guest %}
-    <a
-      href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-lg-inline-block"
-    >
+    <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>
-    {% endunless %} {% when '/' %} {% if user.guest %}
-    <a
-      href="{{ link.url | link }}"
-      class="
-        top_menu--link
-        py-2
-        d-none d-lg-inline-block
-        underline-hover-effect
-      "
-    >
-      {{ link.title }}
-    </a>
-    {% endif %} {% else %}
-    <a
-      href="{{ link.url | link }}"
-      class="
-        top_menu--link
-        py-2
-        d-none d-lg-inline-block
-        underline-hover-effect
-      "
-    >
+    {% endunless %} {% else %}
+    <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>
     {% endcase %} {% endif %} {% endfor %}
