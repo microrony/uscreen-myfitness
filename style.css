@@ -157,13 +157,13 @@ body {
 }
 
 .hero_banner--main .swiper-slide {
-  height: 80vh;
+  height: 50vh;
 }
 
 /* Our Pricing Plan Style */
 
 .our_pricing_plan {
-  background: url('https://s3.amazonaws.com/unode1/assets/24958/Y9BXXE9oSy2OB2cR6MJw_2nd_sec_bg.png');
+  background: url('https://s3.amazonaws.com/unode1/assets/24958/Qjs2zTxWRBG3XAA297Wi_2nd_sec_bg.jpg');
 }
 
 .our-pricing-plan .our-pricing-plan--subtitle {
@@ -265,7 +265,7 @@ body {
 /* Testimonials Section Style */
 
 .testimonials {
-  background: url('https://s3.amazonaws.com/unode1/assets/24958/b3CqbVfQJ2b7BXuGwUVJ_testimonial_bg.png');
+  background: url('https://s3.amazonaws.com/unode1/assets/24958/rEJOhOZSRKMC7lptA1nU_testimonial_bg.jpg');
   background-size: contain;
 }
 
@@ -404,7 +404,7 @@ body {
 
   .hero_banner .hero_banner--main .banner-swiper-logo {
     top: 20%;
-    right: 25%;
+    right: 10%;
     height: 200px;
   }
 
@@ -446,7 +446,7 @@ body {
 
   .hero_banner .hero_banner--main .banner-swiper-logo {
     top: 20%;
-    right: 25%;
+    right: 10%;
     height: 250px;
   }
 

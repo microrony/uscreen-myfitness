@@ -22,11 +22,13 @@
           >
             {{ settings.page_blocks.testimonials.testimonial1_text }}
           </h4>
+          {% if settings.page_blocks.testimonials.testimonial1_image != blank %}
           <img
             src="{{ settings.page_blocks.testimonials.testimonial1_image }}"
             alt="{{ settings.page_blocks.testimonials.testimonial1_name }}"
             class="h-16 w-16 md:h-24 md:w-24"
           />
+          {% endif %}
           <h3 class="font-bold text-base md:text-xl xl:text-2xl mt-2">
             {{ settings.page_blocks.testimonials.testimonial1_name }}
           </h3>
@@ -46,18 +48,76 @@
               xl:max-w-5xl
             "
           >
-            {{ settings.page_blocks.testimonials.testimonial1_text }}
+            {{ settings.page_blocks.testimonials.testimonial2_text }}
           </h4>
+          {% if settings.page_blocks.testimonials.testimonial2_image != blank %}
           <img
-            src="{{ settings.page_blocks.testimonials.testimonial1_image }}"
-            alt="{{ settings.page_blocks.testimonials.testimonial1_name }}"
+            src="{{ settings.page_blocks.testimonials.testimonial2_image }}"
+            alt="{{ settings.page_blocks.testimonials.testimonial2_name }}"
             class="h-16 w-16 md:h-24 md:w-24"
           />
+          {% endif %}
           <h3 class="font-bold text-base md:text-xl xl:text-2xl mt-2">
-            {{ settings.page_blocks.testimonials.testimonial1_name }}
+            {{ settings.page_blocks.testimonials.testimonial2_name }}
           </h3>
           <h4 class="text-xs md:text-sm">
-            {{ settings.page_blocks.testimonials.testimonial1_date }}
+            {{ settings.page_blocks.testimonials.testimonial2_date }}
+          </h4>
+        </div>
+        <div class="swiper-slide flex flex-col items-center">
+          <h4
+            class="
+              testimonial_text
+              text-sm
+              md:text-xl
+              text-center
+              mt-12
+              mb-8
+              xl:max-w-5xl
+            "
+          >
+            {{ settings.page_blocks.testimonials.testimonial3_text }}
+          </h4>
+          {% if settings.page_blocks.testimonials.testimonial3_image != blank %}
+          <img
+            src="{{ settings.page_blocks.testimonials.testimonial3_image }}"
+            alt="{{ settings.page_blocks.testimonials.testimonial3_name }}"
+            class="h-16 w-16 md:h-24 md:w-24"
+          />
+          {% endif %}
+          <h3 class="font-bold text-base md:text-xl xl:text-2xl mt-2">
+            {{ settings.page_blocks.testimonials.testimonial3_name }}
+          </h3>
+          <h4 class="text-xs md:text-sm">
+            {{ settings.page_blocks.testimonials.testimonial3_date }}
+          </h4>
+        </div>
+        <div class="swiper-slide flex flex-col items-center">
+          <h4
+            class="
+              testimonial_text
+              text-sm
+              md:text-xl
+              text-center
+              mt-12
+              mb-8
+              xl:max-w-5xl
+            "
+          >
+            {{ settings.page_blocks.testimonials.testimonial4_text }}
+          </h4>
+          {% if settings.page_blocks.testimonials.testimonial4_image != blank %}
+          <img
+            src="{{ settings.page_blocks.testimonials.testimonial4_image }}"
+            alt="{{ settings.page_blocks.testimonials.testimonial4_name }}"
+            class="h-16 w-16 md:h-24 md:w-24"
+          />
+          {% endif %}
+          <h3 class="font-bold text-base md:text-xl xl:text-2xl mt-2">
+            {{ settings.page_blocks.testimonials.testimonial4_name }}
+          </h3>
+          <h4 class="text-xs md:text-sm">
+            {{ settings.page_blocks.testimonials.testimonial4_date }}
           </h4>
         </div>
       </div>

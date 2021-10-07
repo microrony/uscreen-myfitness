@@ -31,7 +31,7 @@
               "id": "image2",
               "title": "Image 2",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/iDWaMBEpTO5HZGTAN1eR_hero2.jpg"
             },
 						{
 							"id": "image2_alt",
@@ -43,7 +43,7 @@
               "id": "image3",
               "title": "Image 3",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/meaLDGSGT3K42o1buaNd_hero3.jpg"
             },
 						{
 							"id": "image3_alt",
@@ -55,7 +55,7 @@
               "id": "image4",
               "title": "Image 4",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/MYoS4ZSeq6sF8YEmSDEA_hero4.jpg"
             },
 						{
 							"id": "image4_alt",
@@ -67,7 +67,7 @@
               "id": "image5",
               "title": "Image 5",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/pjcMPX2SJqICM3dM9XAv_hero5.jpg"
             },
 						{
 							"id": "image5_alt",
@@ -79,7 +79,7 @@
               "id": "image6",
               "title": "Image 6",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/fnM85p4pRUyDZLsGdJrO_hero6.jpg"
             },
 						{
 							"id": "image6_alt",
@@ -539,25 +539,73 @@
               "id": "testimonial2_text",
               "title": "Testimonail 2: Text",
               "type": "text",
-              "value": "I am a cancer survivor and 2 years ago I stepped into the MY Fitness studio and asked May if Pilates can help me achieve me lifelong dream … to conquer one of Nepal’s greatest trekking trails.  2 years later, I am now both mentally and physically strong and here I am today standing on the Himalaya trail!  Thanks so much and see you when I get back!"
+              "value": "My wife and I have been clients of MY FITNESS for 6 months and the results speak for themselves. We have both lost weight, gained core strength and most importantly, we feel great! I fly a lot for my business and as a result, I used to have chronic backaches. Now, with my back and core muscles toned, I fit better in my clothes!  Thanks for bringing our health back!"
 						},
 						{
               "id": "testimonial2_image",
               "title": "Testimonail 2: Image",
               "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/PA6fEeB8Rx68Xy0q4Yvo_ms_nor.png"
+              "value": ""
 						},
 						{
               "id": "testimonial2_name",
               "title": "Testimonail 2: Name",
               "type": "string",
-              "value": "Ms Nor"
+              "value": "Carl and Jessie"
 						},
 						{
               "id": "testimonial2_date",
               "title": "Testimonail 2: Date",
               "type": "string",
-              "value": "2019"
+              "value": "2013"
+						},
+						{
+              "id": "testimonial3_text",
+              "title": "Testimonail 3: Text",
+              "type": "text",
+              "value": "It was May Yang who inspired me to take up Pilates in 2004 when I attended her trial session. Over the past 10 years, I have indeed benefited a lot from this exercise. Now I am more flexible with stronger arms, lower back strength and a more toned body compared to peers of my age. Pilates classes with May are never the same routine, every class poses a new challenge to improve on. Thank you for your efforts to help me become fitter!"
+						},
+						{
+              "id": "testimonial3_image",
+              "title": "Testimonail 3: Image",
+              "type": "image",
+              "value": ""
+						},
+						{
+              "id": "testimonial3_name",
+              "title": "Testimonail 3: Name",
+              "type": "string",
+              "value": "June Tan"
+						},
+						{
+              "id": "testimonial3_date",
+              "title": "Testimonail 3: Date",
+              "type": "string",
+              "value": "2013"
+						},
+						{
+              "id": "testimonial4_text",
+              "title": "Testimonail 4: Text",
+              "type": "text",
+              "value": "I have developed strength and muscle tone since becoming a client at MY FITNESS. I feel stronger and have noticed a huge difference in my posture in how I carry myself. The trainers are enjoyable to work with and have challenged me to meet my potential. It is without hesitation that I recommend My Fitness for achieving your own personal fitness goals."
+						},
+						{
+              "id": "testimonial4_image",
+              "title": "Testimonail 4: Image",
+              "type": "image",
+              "value": ""
+						},
+						{
+              "id": "testimonial4_name",
+              "title": "Testimonail 4: Name",
+              "type": "string",
+              "value": "Patti"
+						},
+						{
+              "id": "testimonial4_date",
+              "title": "Testimonail 4: Date",
+              "type": "string",
+              "value": "2013"
 						}
 					] 
 				},
