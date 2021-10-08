@@ -19,7 +19,7 @@
               "id": "image1",
               "title": "Image 1",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/ON3vL2ZvTQy83YKudbgD_hero1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/8xGdRNClTTySbL24mWED_hero1.jpg"
             },
 						{
 							"id": "image1_alt",
@@ -309,19 +309,19 @@
               "id": "swiper_image1",
               "title": "Swiper Image 1",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/RmEjqPKTdWlhVewmRtBQ_about_swiper_img1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/Hp58oudcQnSI9fxpp3Dh_about_swiper_img1.jpg"
             },
 						{
               "id": "swiper_image2",
               "title": "Swiper Image 2",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/RmEjqPKTdWlhVewmRtBQ_about_swiper_img1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/t2IoVLGkSheS3gbRYB30_about_swiper_img2.jpg"
             },
 						{
               "id": "swiper_image3",
               "title": "Swiper Image 3",
               "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/RmEjqPKTdWlhVewmRtBQ_about_swiper_img1.png"
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/339q9er2QBmeAC2qETDf_about_swiper_img3.jpg"
             },
 						{
 							"id": "second_small_title_span",

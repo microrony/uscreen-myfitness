@@ -297,6 +297,7 @@ body {
 @media (min-width: 768px) {
   .md_big_title {
     font-size: 3.25rem;
+    line-height: 62px;
   }
 
   .md_small_title {
