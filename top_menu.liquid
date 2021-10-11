@@ -1,4 +1,4 @@
-<div class="top_menu">
+<div class="top_menu py-6">
   <div class="container">
     <div class="top_menu--logo">
       <a href="/">
@@ -121,7 +121,16 @@
         top_menu--link
         py-2
         d-none d-lg-inline-block
-        underline-hover-effect
+        underline-hover-effect{%
+        if
+        template
+        ==
+        'about'
+        %}
+        color_secondary
+        {%
+        endif
+        %}
       "
     >
       {{ link.title }}

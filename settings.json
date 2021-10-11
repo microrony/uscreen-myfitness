@@ -1,491 +1,446 @@
 {
-  "pages": [
-    {
-      "type": "index",
-      "title": "Main page",
-      "blocks": [
-        {
-          "id": "hero_banner",
-          "title": "Main Banner",
-          "description": "Settings for Main Banner",
-          "fields": [
-            {
-              "id": "logo",
-              "title": "Logo",
-              "type": "image",
-							"value": "https://s3.amazonaws.com/unode1/assets/24958/maMDKeeeRRSEn2WwMpe5_logo.png"
-            },
+	"pages": [
+		{
+			"type": "index",
+			"title": "Main page",
+			"blocks": [
+				{
+					"id": "hero_banner",
+					"title": "Main Banner",
+					"description": "Settings for Main Banner",
+					"fields": [
 						{
-              "id": "image1",
-              "title": "Image 1",
-              "type": "image",
+							"id": "logo",
+							"title": "Logo",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/maMDKeeeRRSEn2WwMpe5_logo.png"
+						},
+						{
+							"id": "image1",
+							"title": "Image 1",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/8xGdRNClTTySbL24mWED_hero1.jpg"
-            },
+						},
 						{
 							"id": "image1_alt",
-              "title": "Image 1 Alternative Text",
-              "type": "string",
+							"title": "Image 1 Alternative Text",
+							"type": "string",
 							"value": "Alternative Text"
 						},
 						{
-              "id": "image2",
-              "title": "Image 2",
-              "type": "image",
+							"id": "image2",
+							"title": "Image 2",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/iDWaMBEpTO5HZGTAN1eR_hero2.jpg"
-            },
+						},
 						{
 							"id": "image2_alt",
-              "title": "Image 2 Alternative Text",
-              "type": "string",
+							"title": "Image 2 Alternative Text",
+							"type": "string",
 							"value": "Alternative Text"
 						},
 						{
-              "id": "image3",
-              "title": "Image 3",
-              "type": "image",
+							"id": "image3",
+							"title": "Image 3",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/meaLDGSGT3K42o1buaNd_hero3.jpg"
-            },
+						},
 						{
 							"id": "image3_alt",
-              "title": "Image 3 Alternative Text",
-              "type": "string",
+							"title": "Image 3 Alternative Text",
+							"type": "string",
 							"value": "Alternative Text"
 						},
 						{
-              "id": "image4",
-              "title": "Image 4",
-              "type": "image",
+							"id": "image4",
+							"title": "Image 4",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/MYoS4ZSeq6sF8YEmSDEA_hero4.jpg"
-            },
+						},
 						{
 							"id": "image4_alt",
-              "title": "Image 4 Alternative Text",
-              "type": "string",
+							"title": "Image 4 Alternative Text",
+							"type": "string",
 							"value": "Alternative Text"
 						},
 						{
-              "id": "image5",
-              "title": "Image 5",
-              "type": "image",
+							"id": "image5",
+							"title": "Image 5",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/pjcMPX2SJqICM3dM9XAv_hero5.jpg"
-            },
+						},
 						{
 							"id": "image5_alt",
-              "title": "Image 5 Alternative Text",
-              "type": "string",
+							"title": "Image 5 Alternative Text",
+							"type": "string",
 							"value": "Alternative Text"
 						},
 						{
-              "id": "image6",
-              "title": "Image 6",
-              "type": "image",
+							"id": "image6",
+							"title": "Image 6",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/fnM85p4pRUyDZLsGdJrO_hero6.jpg"
-            },
+						},
 						{
 							"id": "image6_alt",
-              "title": "Image 6 Alternative Text",
-              "type": "string",
+							"title": "Image 6 Alternative Text",
+							"type": "string",
 							"value": "Alternative Text"
 						}
-          ]
-        },
+					]
+				},
 				{
-          "id": "our_pricing_plan",
-          "title": "Our Pricing Plan",
-          "description": "Settings for Our Pricing Plan Section",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "Our Pricing Plan"
-            },
-            {
-              "id": "subtitle",
-              "title": "Subtitle",
-              "type": "text",
-              "value": "Subscribe for Online Fitness, Pilates, Yoga and Dance classes – practice whenever and wherever you want!"
-            },
-            {
-              "id": "card1_title",
-              "title": "Card 1: Title",
-              "type": "string",
-              "value": "3 Month"
-            },
-						{
-              "id": "card1_subtitle",
-              "title": "Card 1: Subtitle",
-              "type": "string",
-              "value": "Subscription"
-            },
-						{
-              "id": "card1_currency",
-              "title": "Card 1: Currency",
-              "type": "string",
-              "value": "US$"
-            },
-						{
-              "id": "card1_amount",
-              "title": "Card 1: Amount",
-              "type": "string",
-              "value": "30"
-            },
-						{
-              "id": "card1_save_text",
-              "title": "Card 1: Save Text",
-              "type": "string",
-              "value": "Save 20%"
-            },
-						{
-              "id": "card1_trial_text",
-              "title": "Card 1: Trial Text",
-              "type": "text",
-              "value": "7-day free trial Renews automatically Cancel anytime"
-            },
-						{
-              "id": "card1_button_text",
-              "title": "Card 1: Button Text",
-              "type": "string",
-              "value": "Start your free trial"
-            },
-            {
-              "id": "card1_button_url",
-              "title": "Card 1: Button Link",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            },
-						{
-              "id": "card2_title",
-              "title": "Card 2: Title",
-              "type": "string",
-              "value": "12 Month"
-            },
-						{
-              "id": "card2_subtitle",
-              "title": "Card 2: Subtitle",
-              "type": "string",
-              "value": "Subscription"
-            },
-						{
-              "id": "card2_currency",
-              "title": "Card 2: Currency",
-              "type": "string",
-              "value": "US$"
-            },
-						{
-              "id": "card2_amount",
-              "title": "Card 2: Amount",
-              "type": "string",
-              "value": "90"
-            },
-						{
-              "id": "card2_save_text",
-              "title": "Card 2: Save Text",
-              "type": "string",
-              "value": "Save 25%"
-            },
-						{
-              "id": "card2_trial_text",
-              "title": "Card 2: Trial Text",
-              "type": "text",
-              "value": "7-day free trial Renews automatically Cancel anytime"
-            },
-						{
-              "id": "card2_button_text",
-              "title": "Card 2: Button Text",
-              "type": "string",
-              "value": "Start your free trial"
-            },
-            {
-              "id": "card2_button_url",
-              "title": "Card 2: Button Link",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            }
-          ]
-        },
-        {
-          "id": "featured_category",
-          "title": "Promoted Category",
-          "description": "Modify the settings of your promoted category",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "FEATURED"
-            },
-            {
-              "id": "id",
-              "title": "Category",
-              "type": "category_select",
-              "value": null
-            },
-            {
-              "id": "limit",
-              "title": "Programs Limit",
-              "type": "integer",
-              "value": 6,
-              "hint": "You can show up to 6 programs on the home page. You can modify program position inside a specific category."
-            },
-            {
-              "id": "cta_text",
-              "title": "CTA text",
-              "type": "string",
-              "value": "View all programs",
-              "hint": ""
-            },
-            {
-              "id": "cta_url",
-              "title": "CTA link",
-              "type": "link",
-              "value": "0-catalog",
-              "hint": "By default setup to catalog page."
-            }
-          ]
-        },
-				{
-					"id": "about",
-          "title": "About",
-          "description": "Settings for 'About' section",
-          "fields": [
+					"id": "our_pricing_plan",
+					"title": "Our Pricing Plan",
+					"description": "Settings for Our Pricing Plan Section",
+					"fields": [
 						{
 							"id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
+							"title": "Show/Hide Section",
+							"type": "boolean",
+							"value": true
+						},
+						{
+							"id": "title",
+							"title": "Title",
+							"type": "string",
+							"value": "Our Pricing Plan"
+						},
+						{
+							"id": "subtitle",
+							"title": "Subtitle",
+							"type": "text",
+							"value": "Subscribe for Online Fitness, Pilates, Yoga and Dance classes – practice whenever and wherever you want!"
+						},
+						{
+							"id": "card1_title",
+							"title": "Card 1: Title",
+							"type": "string",
+							"value": "3 Month"
+						},
+						{
+							"id": "card1_subtitle",
+							"title": "Card 1: Subtitle",
+							"type": "string",
+							"value": "Subscription"
+						},
+						{
+							"id": "card1_currency",
+							"title": "Card 1: Currency",
+							"type": "string",
+							"value": "US$"
+						},
+						{
+							"id": "card1_amount",
+							"title": "Card 1: Amount",
+							"type": "string",
+							"value": "30"
+						},
+						{
+							"id": "card1_save_text",
+							"title": "Card 1: Save Text",
+							"type": "string",
+							"value": ""
+						},
+						{
+							"id": "card1_trial_text",
+							"title": "Card 1: Trial Text",
+							"type": "text",
+							"value": "7-day free trial Renews automatically Cancel anytime"
+						},
+						{
+							"id": "card1_button_text",
+							"title": "Card 1: Button Text",
+							"type": "string",
+							"value": "Start your free trial"
+						},
+						{
+							"id": "card1_button_url",
+							"title": "Card 1: Button Link",
+							"type": "link",
+							"value": "0-join",
+							"hint": "By default setup to join subscription page."
+						},
+						{
+							"id": "card2_title",
+							"title": "Card 2: Title",
+							"type": "string",
+							"value": "12 Month"
+						},
+						{
+							"id": "card2_subtitle",
+							"title": "Card 2: Subtitle",
+							"type": "string",
+							"value": "Subscription"
+						},
+						{
+							"id": "card2_currency",
+							"title": "Card 2: Currency",
+							"type": "string",
+							"value": "US$"
+						},
+						{
+							"id": "card2_amount",
+							"title": "Card 2: Amount",
+							"type": "string",
+							"value": "90"
+						},
+						{
+							"id": "card2_save_text",
+							"title": "Card 2: Save Text",
+							"type": "string",
+							"value": "Save 25%"
+						},
+						{
+							"id": "card2_trial_text",
+							"title": "Card 2: Trial Text",
+							"type": "text",
+							"value": "7-day free trial Renews automatically Cancel anytime"
+						},
+						{
+							"id": "card2_button_text",
+							"title": "Card 2: Button Text",
+							"type": "string",
+							"value": "Start your free trial"
+						},
+						{
+							"id": "card2_button_url",
+							"title": "Card 2: Button Link",
+							"type": "link",
+							"value": "0-join",
+							"hint": "By default setup to join subscription page."
+						}
+					]
+				},
+				{
+					"id": "about",
+					"title": "About",
+					"description": "Settings for 'About' section",
+					"fields": [
+						{
+							"id": "active",
+							"title": "Show/Hide Section",
+							"type": "boolean",
+							"value": true
 						},
 						{
 							"id": "small_title",
-              "title": "Small Title",
-              "type": "string",
-              "value": "About"
+							"title": "Small Title",
+							"type": "string",
+							"value": "About"
 						},
 						{
 							"id": "big_title_span",
-              "title": "Big Title Span Text",
-              "type": "string",
-              "value": "MY Fitness"
+							"title": "Big Title Span Text",
+							"type": "string",
+							"value": "MY Fitness"
 						},
 						{
 							"id": "big_title",
-              "title": "Big Title",
-              "type": "string",
-              "value": " - May Yang"
+							"title": "Big Title",
+							"type": "string",
+							"value": " - May Yang"
 						},
 						{
 							"id": "about_text1",
-              "title": "About: Text1",
-              "type": "text",
-              "value": "May Yang, the founder of My Fitness, has more than twenty years professional teaching experience in Fitness, Pilates, Yoga and Dance for both adults and kids.  She has been training, teaching and leading fitness events in Singapore, Australia, USA (New York), China, Vietnam and Botswana and set up her first MY Fitness studio in 2010."
+							"title": "About: Text1",
+							"type": "text",
+							"value": "May Yang, the founder of My Fitness, has more than twenty years professional teaching experience in Fitness, Pilates, Yoga and Dance for both adults and kids.  She has been training, teaching and leading fitness events in Singapore, Australia, USA (New York), China, Vietnam and Botswana and set up her first MY Fitness studio in 2010."
 						},
 						{
 							"id": "about_text2",
-              "title": "About: Text2",
-              "type": "text",
-              "value": "May and her fitness routines have been featured in Shape, Tatler, WestEast, and Her World magazines; on “Morning Fitness” on Singapore TV; and in the Straits Times newspaper.  She has modelled for major brands including L’Oreal, Cartier, Nine West, Far East Organisation, DBS Bank, VISA, Singtel, Resorts World Sentosa, Vicks and McDonalds."
+							"title": "About: Text2",
+							"type": "text",
+							"value": "May and her fitness routines have been featured in Shape, Tatler, WestEast, and Her World magazines; on “Morning Fitness” on Singapore TV; and in the Straits Times newspaper.  She has modelled for major brands including L’Oreal, Cartier, Nine West, Far East Organisation, DBS Bank, VISA, Singtel, Resorts World Sentosa, Vicks and McDonalds."
 						},
 						{
 							"id": "about_text3",
-              "title": "About: Text3",
-              "type": "text",
-              "value": "She is also a professional dancer, choreographer and stage performer having performed with the New York Ajkun Ballet Theatre, Ellen Sinopoli Modern Dance ,Company (New York) and a Sydney dance company among others."
-					  },
+							"title": "About: Text3",
+							"type": "text",
+							"value": "She is also a professional dancer, choreographer and stage performer having performed with the New York Ajkun Ballet Theatre, Ellen Sinopoli Modern Dance ,Company (New York) and a Sydney dance company among others."
+						},
 						{
-              "id": "swiper_image1",
-              "title": "Swiper Image 1",
-              "type": "image",
+							"id": "swiper_image1",
+							"title": "Swiper Image 1",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/Hp58oudcQnSI9fxpp3Dh_about_swiper_img1.jpg"
-            },
+						},
 						{
-              "id": "swiper_image2",
-              "title": "Swiper Image 2",
-              "type": "image",
+							"id": "swiper_image2",
+							"title": "Swiper Image 2",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/t2IoVLGkSheS3gbRYB30_about_swiper_img2.jpg"
-            },
+						},
 						{
-              "id": "swiper_image3",
-              "title": "Swiper Image 3",
-              "type": "image",
+							"id": "swiper_image3",
+							"title": "Swiper Image 3",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/339q9er2QBmeAC2qETDf_about_swiper_img3.jpg"
-            },
+						},
 						{
 							"id": "second_small_title_span",
-              "title": "Second Small Title Span Text",
-              "type": "string",
-              "value": "MY Fitness"
+							"title": "Second Small Title Span Text",
+							"type": "string",
+							"value": "MY Fitness"
 						},
 						{
 							"id": "second_small_title",
-              "title": "Second Small Title",
-              "type": "string",
-              "value": " - Studios"
+							"title": "Second Small Title",
+							"type": "string",
+							"value": " - Studios"
 						},
 						{
-              "id": "studio_image1",
-              "title": "Studio Image 1",
-              "type": "image",
+							"id": "studio_image1",
+							"title": "Studio Image 1",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/zsb31XTxRwqOuJSTZwQr_studio_img1.png"
-            },
+						},
 						{
-              "id": "studio_image2",
-              "title": "Studio Image 2",
-              "type": "image",
+							"id": "studio_image2",
+							"title": "Studio Image 2",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/tKnyCqehTpG8orkZMPcC_studio_img2.png"
-            },
+						},
 						{
-              "id": "studio_image3",
-              "title": "Studio Image 3",
-              "type": "image",
+							"id": "studio_image3",
+							"title": "Studio Image 3",
+							"type": "image",
 							"value": "https://s3.amazonaws.com/unode1/assets/24958/jWXQqtvTHyADNZBIjTPX_studio_img3.png"
-            },{
-              "id": "button_text",
-              "title": "Button Text",
-              "type": "string",
-              "value": "More about us"
-            },
-            {
-              "id": "button_url",
-              "title": "Button Link",
-              "type": "link",
-              "value": ""
-            }
+						},
+						{
+							"id": "button_text",
+							"title": "Button Text",
+							"type": "string",
+							"value": "More about us"
+						},
+						{
+							"id": "button_url",
+							"title": "Button Link",
+							"type": "link",
+							"value": ""
+						}
 					]
 				},
-        {
-          "id": "who_will_guid_you",
-          "title": "Who will guide you",
-          "description": "Settings for 'Who will guid you' section",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "WHO WILL GUIDE YOU?"
-            },
-            {
-              "id": "subtitle",
-              "title": "Subtitle",
-              "type": "text",
-              "value": "The best teachers always seem to have a few things in common: they see you, they hear you, and they encourage you forward without forcing your steps. They are there for you, in whatever way you need at the moment. Wanderlust provides just that: a carefully-curated faculty of yogic guides who will nurture your growth, in person and online."
-            },
-            {
-              "id": "iframe",
-              "title": "iframe",
-              "type": "text",
-              "value": "<iframe width='560' height='315' src='https://www.youtube.com/embed/LFWgRLC3iF4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
-            }
-          ]
-        },
-        {
-          "id": "our_programs",
-          "title": "Our Programs",
-          "description": "Modify the settings of Our Programs Section",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "Our Programs"
-            },
-            {
-              "id": "element_1_image",
-              "title": "Block 1: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/CAOEaIJITWyKyDBgsDMw_program_img1.png"
-            },
-            {
-              "id": "element_1_title",
-              "title": "Block 1: Title",
-              "type": "string",
-              "value": "MY PILATES"
-            },
-            {
-              "id": "element_2_image",
-              "title": "Block 2: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"
-            },
-            {
-              "id": "element_2_title",
-              "title": "Block 2: Title",
-              "type": "string",
-              "value": "MY CARDIO"
-            },
-            {
-              "id": "element_3_image",
-              "title": "Block 3: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/zwnTj6x2R73J0WpKtONe_program_img3.png"
-            },
-            {
-              "id": "element_3_title",
-              "title": "Block 3: Title",
-              "type": "string",
-              "value": "MY DANCE"
-            },
-            {
-              "id": "element_4_image",
-              "title": "Block 4: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/Ify87HEYSguTWMHdePNt_program_img4.png"
-            },
-            {
-              "id": "element_4_title",
-              "title": "Block 4: Title",
-              "type": "string",
-              "value": "MY FAMILY"
-            },
-            {
-              "id": "element_5_image",
-              "title": "Block 5: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/7gzbODKETxaiIAyiSjvj_program_img5.png"
-            },
-            {
-              "id": "element_5_title",
-              "title": "Block 5: Title",
-              "type": "string",
-              "value": "MY EQUIPMENT"
-            },
-            {
-              "id": "element_6_image",
-              "title": "Block 6: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/d0JfiIP1S5mJnX8eTIHR_program_img6.png"
-            },
-            {
-              "id": "element_6_title",
-              "title": "Block 6: Title",
-              "type": "string",
-              "value": "MY BODY"
-            },
+				{
+					"id": "who_will_guid_you",
+					"title": "Who will guide you",
+					"description": "Settings for 'Who will guid you' section",
+					"fields": [
+						{
+							"id": "active",
+							"title": "Show/Hide Section",
+							"type": "boolean",
+							"value": true
+						},
+						{
+							"id": "title",
+							"title": "Title",
+							"type": "string",
+							"value": "WHO WILL GUIDE YOU?"
+						},
+						{
+							"id": "subtitle",
+							"title": "Subtitle",
+							"type": "text",
+							"value": "The best teachers always seem to have a few things in common: they see you, they hear you, and they encourage you forward without forcing your steps. They are there for you, in whatever way you need at the moment. Wanderlust provides just that: a carefully-curated faculty of yogic guides who will nurture your growth, in person and online."
+						},
+						{
+							"id": "iframe",
+							"title": "iframe",
+							"type": "text",
+							"value": "<iframe width='560' height='315' src='https://www.youtube.com/embed/LFWgRLC3iF4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+						}
+					]
+				},
+				{
+					"id": "our_programs",
+					"title": "Our Programs",
+					"description": "Modify the settings of Our Programs Section",
+					"fields": [
+						{
+							"id": "active",
+							"title": "Show/Hide Section",
+							"type": "boolean",
+							"value": true
+						},
+						{
+							"id": "title",
+							"title": "Title",
+							"type": "string",
+							"value": "Our Programs"
+						},
+						{
+							"id": "element_1_image",
+							"title": "Block 1: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/CAOEaIJITWyKyDBgsDMw_program_img1.png"
+						},
+						{
+							"id": "element_1_title",
+							"title": "Block 1: Title",
+							"type": "string",
+							"value": "MY PILATES"
+						},
+						{
+							"id": "element_2_image",
+							"title": "Block 2: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"
+						},
+						{
+							"id": "element_2_title",
+							"title": "Block 2: Title",
+							"type": "string",
+							"value": "MY CARDIO"
+						},
+						{
+							"id": "element_3_image",
+							"title": "Block 3: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/zwnTj6x2R73J0WpKtONe_program_img3.png"
+						},
+						{
+							"id": "element_3_title",
+							"title": "Block 3: Title",
+							"type": "string",
+							"value": "MY DANCE"
+						},
+						{
+							"id": "element_4_image",
+							"title": "Block 4: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/Ify87HEYSguTWMHdePNt_program_img4.png"
+						},
+						{
+							"id": "element_4_title",
+							"title": "Block 4: Title",
+							"type": "string",
+							"value": "MY FAMILY"
+						},
+						{
+							"id": "element_5_image",
+							"title": "Block 5: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/7gzbODKETxaiIAyiSjvj_program_img5.png"
+						},
+						{
+							"id": "element_5_title",
+							"title": "Block 5: Title",
+							"type": "string",
+							"value": "MY EQUIPMENT"
+						},
+						{
+							"id": "element_6_image",
+							"title": "Block 6: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/d0JfiIP1S5mJnX8eTIHR_program_img6.png"
+						},
+						{
+							"id": "element_6_title",
+							"title": "Block 6: Title",
+							"type": "string",
+							"value": "MY BODY"
+						},
 						{
 							"id": "button_text",
 							"title": "Button Text",
@@ -498,678 +453,534 @@
 							"type": "link",
 							"value": "#"
 						}
-          ]
-        },
+					]
+				},
 				{
 					"id": "testimonials",
-          "title": "Testimonials",
-          "description": "Modify the settings of Testimonails Section",
-          "fields": [
+					"title": "Testimonials",
+					"description": "Modify the settings of Testimonails Section",
+					"fields": [
 						{
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-						{
-              "id": "testimonial1_text",
-              "title": "Testimonail 1: Text",
-              "type": "text",
-              "value": "I am a cancer survivor and 2 years ago I stepped into the MY Fitness studio and asked May if Pilates can help me achieve me lifelong dream … to conquer one of Nepal’s greatest trekking trails.  2 years later, I am now both mentally and physically strong and here I am today standing on the Himalaya trail!  Thanks so much and see you when I get back!"
+							"id": "active",
+							"title": "Show/Hide Section",
+							"type": "boolean",
+							"value": true
 						},
 						{
-              "id": "testimonial1_image",
-              "title": "Testimonail 1: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/24958/PA6fEeB8Rx68Xy0q4Yvo_ms_nor.png"
+							"id": "testimonial1_text",
+							"title": "Testimonail 1: Text",
+							"type": "text",
+							"value": "I am a cancer survivor and 2 years ago I stepped into the MY Fitness studio and asked May if Pilates can help me achieve me lifelong dream … to conquer one of Nepal’s greatest trekking trails.  2 years later, I am now both mentally and physically strong and here I am today standing on the Himalaya trail!  Thanks so much and see you when I get back!"
 						},
 						{
-              "id": "testimonial1_name",
-              "title": "Testimonail 1: Name",
-              "type": "string",
-              "value": "Ms Nor"
+							"id": "testimonial1_image",
+							"title": "Testimonail 1: Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/PA6fEeB8Rx68Xy0q4Yvo_ms_nor.png"
 						},
 						{
-              "id": "testimonial1_date",
-              "title": "Testimonail 1: Date",
-              "type": "string",
-              "value": "2019"
+							"id": "testimonial1_name",
+							"title": "Testimonail 1: Name",
+							"type": "string",
+							"value": "Ms Nor"
 						},
 						{
-              "id": "testimonial2_text",
-              "title": "Testimonail 2: Text",
-              "type": "text",
-              "value": "My wife and I have been clients of MY FITNESS for 6 months and the results speak for themselves. We have both lost weight, gained core strength and most importantly, we feel great! I fly a lot for my business and as a result, I used to have chronic backaches. Now, with my back and core muscles toned, I fit better in my clothes!  Thanks for bringing our health back!"
+							"id": "testimonial1_date",
+							"title": "Testimonail 1: Date",
+							"type": "string",
+							"value": "2019"
 						},
 						{
-              "id": "testimonial2_image",
-              "title": "Testimonail 2: Image",
-              "type": "image",
-              "value": ""
+							"id": "testimonial2_text",
+							"title": "Testimonail 2: Text",
+							"type": "text",
+							"value": "My wife and I have been clients of MY FITNESS for 6 months and the results speak for themselves. We have both lost weight, gained core strength and most importantly, we feel great! I fly a lot for my business and as a result, I used to have chronic backaches. Now, with my back and core muscles toned, I fit better in my clothes!  Thanks for bringing our health back!"
 						},
 						{
-              "id": "testimonial2_name",
-              "title": "Testimonail 2: Name",
-              "type": "string",
-              "value": "Carl and Jessie"
+							"id": "testimonial2_image",
+							"title": "Testimonail 2: Image",
+							"type": "image",
+							"value": ""
 						},
 						{
-              "id": "testimonial2_date",
-              "title": "Testimonail 2: Date",
-              "type": "string",
-              "value": "2013"
+							"id": "testimonial2_name",
+							"title": "Testimonail 2: Name",
+							"type": "string",
+							"value": "Carl and Jessie"
 						},
 						{
-              "id": "testimonial3_text",
-              "title": "Testimonail 3: Text",
-              "type": "text",
-              "value": "It was May Yang who inspired me to take up Pilates in 2004 when I attended her trial session. Over the past 10 years, I have indeed benefited a lot from this exercise. Now I am more flexible with stronger arms, lower back strength and a more toned body compared to peers of my age. Pilates classes with May are never the same routine, every class poses a new challenge to improve on. Thank you for your efforts to help me become fitter!"
+							"id": "testimonial2_date",
+							"title": "Testimonail 2: Date",
+							"type": "string",
+							"value": "2013"
 						},
 						{
-              "id": "testimonial3_image",
-              "title": "Testimonail 3: Image",
-              "type": "image",
-              "value": ""
+							"id": "testimonial3_text",
+							"title": "Testimonail 3: Text",
+							"type": "text",
+							"value": "It was May Yang who inspired me to take up Pilates in 2004 when I attended her trial session. Over the past 10 years, I have indeed benefited a lot from this exercise. Now I am more flexible with stronger arms, lower back strength and a more toned body compared to peers of my age. Pilates classes with May are never the same routine, every class poses a new challenge to improve on. Thank you for your efforts to help me become fitter!"
 						},
 						{
-              "id": "testimonial3_name",
-              "title": "Testimonail 3: Name",
-              "type": "string",
-              "value": "June Tan"
+							"id": "testimonial3_image",
+							"title": "Testimonail 3: Image",
+							"type": "image",
+							"value": ""
 						},
 						{
-              "id": "testimonial3_date",
-              "title": "Testimonail 3: Date",
-              "type": "string",
-              "value": "2013"
+							"id": "testimonial3_name",
+							"title": "Testimonail 3: Name",
+							"type": "string",
+							"value": "June Tan"
 						},
 						{
-              "id": "testimonial4_text",
-              "title": "Testimonail 4: Text",
-              "type": "text",
-              "value": "I have developed strength and muscle tone since becoming a client at MY FITNESS. I feel stronger and have noticed a huge difference in my posture in how I carry myself. The trainers are enjoyable to work with and have challenged me to meet my potential. It is without hesitation that I recommend My Fitness for achieving your own personal fitness goals."
+							"id": "testimonial3_date",
+							"title": "Testimonail 3: Date",
+							"type": "string",
+							"value": "2013"
 						},
 						{
-              "id": "testimonial4_image",
-              "title": "Testimonail 4: Image",
-              "type": "image",
-              "value": ""
+							"id": "testimonial4_text",
+							"title": "Testimonail 4: Text",
+							"type": "text",
+							"value": "I have developed strength and muscle tone since becoming a client at MY FITNESS. I feel stronger and have noticed a huge difference in my posture in how I carry myself. The trainers are enjoyable to work with and have challenged me to meet my potential. It is without hesitation that I recommend My Fitness for achieving your own personal fitness goals."
 						},
 						{
-              "id": "testimonial4_name",
-              "title": "Testimonail 4: Name",
-              "type": "string",
-              "value": "Patti"
+							"id": "testimonial4_image",
+							"title": "Testimonail 4: Image",
+							"type": "image",
+							"value": ""
 						},
 						{
-              "id": "testimonial4_date",
-              "title": "Testimonail 4: Date",
-              "type": "string",
-              "value": "2013"
+							"id": "testimonial4_name",
+							"title": "Testimonail 4: Name",
+							"type": "string",
+							"value": "Patti"
+						},
+						{
+							"id": "testimonial4_date",
+							"title": "Testimonail 4: Date",
+							"type": "string",
+							"value": "2013"
 						}
-					] 
+					]
 				},
-        {
-          "id": "all_platforms",
-          "title": "All Platforms",
-          "description": "Modify the settings of your All Platforms",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "WORK OUT ANYWHERE, ANYTIME!"
-            },
-            {
-              "id": "subtitle",
-              "title": "Subtitle",
-              "type": "text",
-              "value": "Take your workouts with you. Get our FREE APPS for Android, iPhone and iPad. One sign-in for the website and all your devices. Also available on AppleTV!"
-            },
-            {
-              "id": "image",
-              "title": "Devices screen image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/XTeFo07ITBeLRGnZTfPA_theme-20-all-devices.jpg",
-              "hint": "Recommended size: 1600x1200px"
-            },
-            {
-              "id": "amazon",
-              "title": "Show/Hide Amazon",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "amazon_link",
-              "title": "Amazon link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            },
-            {
-              "id": "apple_tv",
-              "title": "Show/Hide Apple TV",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "apple_tv_link",
-              "title": "Apple TV link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            },
-            {
-              "id": "roku_tv",
-              "title": "Show/Hide Roku TV",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "roku_tv_link",
-              "title": "Roku TV link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            },
-            {
-              "id": "iphone",
-              "title": "Show/Hide Iphone",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "iphone_link",
-              "title": "iPhone link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            },
-            {
-              "id": "android",
-              "title": "Show/Hide Android",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "android_link",
-              "title": "Android link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            },
-            {
-              "id": "android_tv",
-              "title": "Show/Hide Android TV",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "android_tv_link",
-              "title": "Android TV link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            },
-            {
-              "id": "fire_tv",
-              "title": "Show/Hide Fire TV",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "fire_tv_link",
-              "title": "Fire TV link",
-              "type": "link",
-              "value": "/#all_platforms",
-              "hint": ""
-            }
-          ]
-        },
-        {
-          "id": "xtreme",
-          "title": "Follow us",
-          "description": "Modify the settings of your Follow us section",
-          "fields": [
-            {
-              "id": "active",
-              "title": "Show/Hide Section",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "above_title",
-              "title": "Title",
-              "type": "string",
-              "value": "Follow us"
-            },
-            {
-              "id": "title",
-              "title": "Title",
-              "type": "string",
-              "value": "#yogaeveryday"
-            },
-            {
-              "id": "element_1_image",
-              "title": "Block 1: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/lEA4OA39RjKhu7LGxKBn_instagram-1.jpg",
-              "hint": "Recommended size: 576x358px"
-            },
-            {
-              "id": "element_1_url",
-              "title": "Block 1: Link",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            },
-            {
-              "id": "element_2_image",
-              "title": "Block 2: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/HhF9xYEwS32LjtJLqBSS_instagram-2.jpg",
-              "hint": "Recommended size: 576x358px"
-            },
-            {
-              "id": "element_2_url",
-              "title": "Block 2: Link",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            },
-            {
-              "id": "element_3_image",
-              "title": "Block 3: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/X3szDf5QVAO4E2Xh721A_instagram-3.jpg",
-              "hint": "Recommended size: 708x716px"
-            },
-            {
-              "id": "element_3_url",
-              "title": "Block 3: Link",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            },
-            {
-              "id": "element_4_image",
-              "title": "Block 4: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/u3dnvDT8SWSTEdXWD60y_instagram-4.jpg",
-              "hint": "Recommended size: 576x358px"
-            },
-            {
-              "id": "element_4_url",
-              "title": "Block 4: Link",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            },
-            {
-              "id": "element_5_image",
-              "title": "Block 5: Image",
-              "type": "image",
-              "value": "https://s3.amazonaws.com/unode1/assets/4832/OT4wcEeJTEaSWdLUdnk1_instagram-5.jpg",
-              "hint": "Recommended size: 576x358px"
-            },
-            {
-              "id": "element_5_url",
-              "title": "Block 5: Category",
-              "type": "link",
-              "value": "0-join",
-              "hint": "By default setup to join subscription page."
-            }
-          ]
-        },
-        {
-          "id": "seo",
-          "title": "SEO Settings",
-          "description": "Search Engine Optimization Settings.",
-          "fields": [
-            {
-              "id": "title",
-              "title": "Page Title",
-              "type": "string",
-              "value": "",
-              "hint": "The title tag of a web page is meant to be an accurate and concise description of a page's content."
-            },
-            {
-              "id": "description",
-              "title": "Page Description",
-              "type": "text",
-              "value": "",
-              "hint": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "catalog",
-      "title": "Catalog page",
-      "blocks": [
-        {
-          "id": "browse",
-          "title": "Browsing Settings",
-          "description": "Setup texts and filtering options.",
-          "fields": [
-            {
-              "id": "all_tab",
-              "title": "All Programs Tab Title",
-              "type": "string",
-              "value": "All programs"
-            },
-            {
-              "id": "library_tab",
-              "title": "Library Tab Title",
-              "type": "string",
-              "value": "My Library"
-            },
-            {
-              "id": "library_tab_show",
-              "title": "Library Tab Show",
-              "type": "boolean",
-              "value": true,
-              "hint": "You don't need 'My library' if you want to sell subscriptions only. (Will show when logged in only)."
-            },
-            {
-              "id": "favorites_tab",
-              "title": "Favorites Tab Title",
-              "type": "string",
-              "value": "Favorites"
-            },
-            {
-              "id": "search_placeholder",
-              "title": "Search Placeholder",
-              "type": "string",
-              "value": "Search programs"
-            },
-            {
-              "id": "filter_by_category",
-              "title": "Allow Filter by Category",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "filter_by_category_placeholder",
-              "title": "Category Filter Placeholder",
-              "type": "string",
-              "value": "Filter by category"
-            },
-            {
-              "id": "filter_by_author",
-              "title": "Allow Filter by Author",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "id": "filter_by_author_placeholder",
-              "title": "Author Filter Placeholder",
-              "type": "string",
-              "value": "Filter by author"
-            },
-            {
-              "id": "load_more",
-              "title": "Pagination loading button",
-              "type": "string",
-              "value": "Load More..."
-            },
-            {
-              "id": "not_found",
-              "title": "Not Found Error",
-              "type": "string",
-              "value": "Sorry! Nothing was found."
-            },
-            {
-              "id": "newest",
-              "title": "Newest filter",
-              "type": "string",
-              "value": "Newest"
-            },
-            {
-              "id": "latest",
-              "title": "Latest filter",
-              "type": "string",
-              "value": "Oldest"
-            }
-          ]
-        },
-        {
-          "id": "seo",
-          "title": "SEO Settings",
-          "description": "Search Engine Optimization Settings.",
-          "fields": [
-            {
-              "id": "title",
-              "title": "Page Title",
-              "type": "string",
-              "value": "The title tag of a web page is meant to be an accurate and concise description of a page's content."
-            },
-            {
-              "id": "description",
-              "title": "Page Description",
-              "type": "text",
-              "value": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "program",
-      "title": "Content page",
-      "blocks": [
-        {
-          "id": "player_texts",
-          "title": "Player",
-          "description": "Settings for your player",
-          "fields": [
-            {
-              "id": "player_color",
-              "title": "Player Control Colors",
-              "type": "color",
-              "value": "#3caab5",
-              "hint": "Primary color used on player elements."
-            },
-            {
-              "id": "cta_title",
-              "title": "CTA Title",
-              "type": "string",
-              "value": "Purchase to Continue"
-            },
-            {
-              "id": "cta_text",
-              "title": "CTA Text",
-              "type": "string",
-              "value": "Get access to this class and train your new skills."
-            },
-            {
-              "id": "cta_button",
-              "title": "CTA Button Text",
-              "type": "string",
-              "value": "Get Access Now"
-            }
-          ]
-        },
-        {
-          "id": "description",
-          "title": "Description area",
-          "description": "Settings for program description area",
-          "fields": [
-            {
-              "id": "about_title",
-              "title": "About program Title",
-              "type": "string",
-              "value": "About Program"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "author",
-      "title": "Author page",
-      "blocks": [
-        {
-          "id": "author_info",
-          "title": "Author Information",
-          "description": "Settings for your author page",
-          "fields": [
-            {
-              "id": "title",
-              "title": "Page Title",
-              "type": "string",
-              "value": "My Classes"
-            },
-            {
-              "id": "button_text",
-              "title": "Button Text",
-              "type": "string",
-              "value": "Browse All"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "title": "Category page",
-      "blocks": [
-        {
-          "id": "category_button",
-          "title": "Category button",
-          "description": "Settings for your category button",
-          "fields": [
-            {
-              "id": "button_text",
-              "title": "Button Text",
-              "type": "string",
-              "value": "Browse All"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "common_blocks": [
-    {
-      "id": "header",
-      "title": "Header",
-      "description": "Settings for Header block",
-      "fields": [
-        {
-          "id": "logo",
-          "title": "Logo",
-          "type": "image",
-          "value": "https://unode1.s3.amazonaws.com/24958/uploads/f4352098-d8ba-4907-a251-a7b0390e4f88.svg",
-          "hint": ""
-        },
-        {
-          "id": "logo_size",
-          "title": "Logo Size",
-          "type": "range",
-          "min": 10,
-          "max": 100,
-          "value": "57",
-          "hint": "Add logo size"
-        },
-        {
-          "id": "background_color",
-          "title": "Header Background Color",
-          "type": "color",
-          "value": "#f6f5f6",
-          "hint": "Note: background color works with every page except Home page."
-        },
-        {
-          "id": "links_color",
-          "title": "Header Links Color",
-          "type": "color",
-          "value": "#141516",
-          "hint": "Note: Header Links color works with every page except Home page."
-        }
-      ]
-    },
-    {
-      "id": "footer",
-      "title": "Footer",
-      "description": "Settings for Footer block",
-      "fields": [
-        {
-          "id": "logo",
-          "title": "Logo",
-          "type": "image",
-          "value": "https://s3.amazonaws.com/unode1/assets/24958/maMDKeeeRRSEn2WwMpe5_logo.png",
-          "hint": ""
-        },
-        {
-          "id": "logo_size",
-          "title": "Logo Size",
-          "type": "range",
-          "min": 10,
-          "max": 100,
-          "value": "57",
-          "hint": "Add logo size"
-        },
-        {
-          "id": "facebook",
-          "title": "Facebook Link",
-          "type": "string",
-          "value": "https://facebook.com"
-        },
-        {
-          "id": "instagram",
-          "title": "Instagram Link",
-          "type": "string",
-          "value": "https://instagram.com"
-        },
-        {
-          "id": "youtube",
-          "title": "Youtube Link",
-          "type": "string",
-          "value": "https://youtube.com"
-        }
-      ]
-    },
-    {
-      "id": "settings",
-      "title": "Settings",
-      "description": "Global Settings",
-      "fields": [
-        {
-          "id": "background_color",
-          "title": "Background Color",
-          "type": "color",
-          "value": "#ffffff",
-          "hint": "Background color used over the whole theme."
-        },
-        {
-          "id": "primary_color",
-          "title": "Primary Color",
-          "type": "color",
-          "value": "#3caab5",
-          "hint": "Primary color used over the whole theme."
-        },
-        {
-          "id": "program_card_author",
-          "title": "Show Author Name",
-          "type": "boolean",
-          "value": true,
-          "hint": "Show author name on program card."
-        },
-        {
-          "id": "program_card_duration",
-          "title": "Show Program Duration",
-          "type": "boolean",
-          "value": true,
-          "hint": "Show program duration on program card."
-        }
-      ]
-    }
-  ]
+				{
+					"id": "seo",
+					"title": "SEO Settings",
+					"description": "Search Engine Optimization Settings.",
+					"fields": [
+						{
+							"id": "title",
+							"title": "Page Title",
+							"type": "string",
+							"value": "",
+							"hint": "The title tag of a web page is meant to be an accurate and concise description of a page's content."
+						},
+						{
+							"id": "description",
+							"title": "Page Description",
+							"type": "text",
+							"value": "",
+							"hint": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description."
+						}
+					]
+				},
+				{
+					"id": "about_hero_banner",
+					"title": "About Page Banner",
+					"description": "About Page Banner Settings.",
+					"fields": [
+						{
+							"id": "title",
+							"title": "Title",
+							"type": "string",
+							"value": "About"
+						},
+						{
+							"id": "title_span",
+							"title": "Title Span Text",
+							"type": "string",
+							"value": " May Yang"
+						},
+						{
+							"id": "image",
+							"title": "Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/q6xuCgpeT76gl7uaX3rV_about_page_hero_banner.jpg"
+						},
+						{
+							"id": "logo_black",
+							"title": "Logo Black",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/NLbhhXYrSHueuF2fjvcN_logo_black.png"
+						}
+					]
+				},
+				{
+					"id": "about_fitness_coach",
+					"title": "About Fitness Coach",
+					"description": "About Page Fitness Coach Settings.",
+					"fields": [
+						{
+							"id": "active",
+							"title": "Show/Hide Section",
+							"type": "boolean",
+							"value": true
+						},
+						{
+							"id": "big_title_span",
+							"title": "Big Title Span Text",
+							"type": "string",
+							"value": "MY Fitness"
+						},
+						{
+							"id": "big_title",
+							"title": "Big Title",
+							"type": "string",
+							"value": " - May Yang"
+						},
+						{
+							"id": "text",
+							"title": "Text",
+							"type": "text",
+							"value": "May Yang, founder of My Fitness, has Pilates, Aerobics, Yoga and Kick-Boxing instructor certifications and Dance qualifications from Australia, Singapore and China, and more than 20 years teaching experience.  Her mission is to impart her rich and diverse experience gleaned over the years to enable her clients to achieve their fitness goals and improve their well-being."
+						},
+						{
+							"id": "image",
+							"title": "Image",
+							"type": "image",
+							"value": "https://s3.amazonaws.com/unode1/assets/24958/q6xuCgpeT76gl7uaX3rV_about_page_hero_banner.jpg"
+						},
+						{
+							"id": "image_alt",
+							"title": "Alternative Text",
+							"type": "string",
+							"value": "Alternative Text"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "catalog",
+			"title": "Catalog page",
+			"blocks": [
+				{
+					"id": "browse",
+					"title": "Browsing Settings",
+					"description": "Setup texts and filtering options.",
+					"fields": [
+						{
+							"id": "all_tab",
+							"title": "All Programs Tab Title",
+							"type": "string",
+							"value": "All programs"
+						},
+						{
+							"id": "library_tab",
+							"title": "Library Tab Title",
+							"type": "string",
+							"value": "My Library"
+						},
+						{
+							"id": "library_tab_show",
+							"title": "Library Tab Show",
+							"type": "boolean",
+							"value": true,
+							"hint": "You don't need 'My library' if you want to sell subscriptions only. (Will show when logged in only)."
+						},
+						{
+							"id": "favorites_tab",
+							"title": "Favorites Tab Title",
+							"type": "string",
+							"value": "Favorites"
+						},
+						{
+							"id": "search_placeholder",
+							"title": "Search Placeholder",
+							"type": "string",
+							"value": "Search programs"
+						},
+						{
+							"id": "filter_by_category",
+							"title": "Allow Filter by Category",
+							"type": "boolean",
+							"value": true
+						},
+						{
+							"id": "filter_by_category_placeholder",
+							"title": "Category Filter Placeholder",
+							"type": "string",
+							"value": "Filter by category"
+						},
+						{
+							"id": "filter_by_author",
+							"title": "Allow Filter by Author",
+							"type": "boolean",
+							"value": true
+						},
+						{
+							"id": "filter_by_author_placeholder",
+							"title": "Author Filter Placeholder",
+							"type": "string",
+							"value": "Filter by author"
+						},
+						{
+							"id": "load_more",
+							"title": "Pagination loading button",
+							"type": "string",
+							"value": "Load More..."
+						},
+						{
+							"id": "not_found",
+							"title": "Not Found Error",
+							"type": "string",
+							"value": "Sorry! Nothing was found."
+						},
+						{
+							"id": "newest",
+							"title": "Newest filter",
+							"type": "string",
+							"value": "Newest"
+						},
+						{
+							"id": "latest",
+							"title": "Latest filter",
+							"type": "string",
+							"value": "Oldest"
+						}
+					]
+				},
+				{
+					"id": "seo",
+					"title": "SEO Settings",
+					"description": "Search Engine Optimization Settings.",
+					"fields": [
+						{
+							"id": "title",
+							"title": "Page Title",
+							"type": "string",
+							"value": "The title tag of a web page is meant to be an accurate and concise description of a page's content."
+						},
+						{
+							"id": "description",
+							"title": "Page Description",
+							"type": "text",
+							"value": "The meta description is an HTML attribute that provides a brief summary of a web page. Search engines such as Google often display the meta description."
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "program",
+			"title": "Content page",
+			"blocks": [
+				{
+					"id": "player_texts",
+					"title": "Player",
+					"description": "Settings for your player",
+					"fields": [
+						{
+							"id": "player_color",
+							"title": "Player Control Colors",
+							"type": "color",
+							"value": "#3caab5",
+							"hint": "Primary color used on player elements."
+						},
+						{
+							"id": "cta_title",
+							"title": "CTA Title",
+							"type": "string",
+							"value": "Purchase to Continue"
+						},
+						{
+							"id": "cta_text",
+							"title": "CTA Text",
+							"type": "string",
+							"value": "Get access to this class and train your new skills."
+						},
+						{
+							"id": "cta_button",
+							"title": "CTA Button Text",
+							"type": "string",
+							"value": "Get Access Now"
+						}
+					]
+				},
+				{
+					"id": "description",
+					"title": "Description area",
+					"description": "Settings for program description area",
+					"fields": [
+						{
+							"id": "about_title",
+							"title": "About program Title",
+							"type": "string",
+							"value": "About Program"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "author",
+			"title": "Author page",
+			"blocks": [
+				{
+					"id": "author_info",
+					"title": "Author Information",
+					"description": "Settings for your author page",
+					"fields": [
+						{
+							"id": "title",
+							"title": "Page Title",
+							"type": "string",
+							"value": "My Classes"
+						},
+						{
+							"id": "button_text",
+							"title": "Button Text",
+							"type": "string",
+							"value": "Browse All"
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "category",
+			"title": "Category page",
+			"blocks": [
+				{
+					"id": "category_button",
+					"title": "Category button",
+					"description": "Settings for your category button",
+					"fields": [
+						{
+							"id": "button_text",
+							"title": "Button Text",
+							"type": "string",
+							"value": "Browse All"
+						}
+					]
+				}
+			]
+		}
+	],
+	"common_blocks": [
+		{
+			"id": "header",
+			"title": "Header",
+			"description": "Settings for Header block",
+			"fields": [
+				{
+					"id": "logo",
+					"title": "Logo",
+					"type": "image",
+					"value": "https://unode1.s3.amazonaws.com/24958/uploads/f4352098-d8ba-4907-a251-a7b0390e4f88.svg",
+					"hint": ""
+				},
+				{
+					"id": "logo_size",
+					"title": "Logo Size",
+					"type": "range",
+					"min": 10,
+					"max": 100,
+					"value": "57",
+					"hint": "Add logo size"
+				},
+				{
+					"id": "background_color",
+					"title": "Header Background Color",
+					"type": "color",
+					"value": "#f6f5f6",
+					"hint": "Note: background color works with every page except Home page."
+				},
+				{
+					"id": "links_color",
+					"title": "Header Links Color",
+					"type": "color",
+					"value": "#141516",
+					"hint": "Note: Header Links color works with every page except Home page."
+				}
+			]
+		},
+		{
+			"id": "footer",
+			"title": "Footer",
+			"description": "Settings for Footer block",
+			"fields": [
+				{
+					"id": "logo",
+					"title": "Logo",
+					"type": "image",
+					"value": "https://s3.amazonaws.com/unode1/assets/24958/maMDKeeeRRSEn2WwMpe5_logo.png",
+					"hint": ""
+				},
+				{
+					"id": "logo_size",
+					"title": "Logo Size",
+					"type": "range",
+					"min": 10,
+					"max": 100,
+					"value": "57",
+					"hint": "Add logo size"
+				},
+				{
+					"id": "facebook",
+					"title": "Facebook Link",
+					"type": "string",
+					"value": "https://facebook.com"
+				},
+				{
+					"id": "instagram",
+					"title": "Instagram Link",
+					"type": "string",
+					"value": "https://instagram.com"
+				},
+				{
+					"id": "youtube",
+					"title": "Youtube Link",
+					"type": "string",
+					"value": "https://youtube.com"
+				}
+			]
+		},
+		{
+			"id": "settings",
+			"title": "Settings",
+			"description": "Global Settings",
+			"fields": [
+				{
+					"id": "background_color",
+					"title": "Background Color",
+					"type": "color",
+					"value": "#ffffff",
+					"hint": "Background color used over the whole theme."
+				},
+				{
+					"id": "primary_color",
+					"title": "Primary Color",
+					"type": "color",
+					"value": "#3caab5",
+					"hint": "Primary color used over the whole theme."
+				},
+				{
+					"id": "program_card_author",
+					"title": "Show Author Name",
+					"type": "boolean",
+					"value": true,
+					"hint": "Show author name on program card."
+				},
+				{
+					"id": "program_card_duration",
+					"title": "Show Program Duration",
+					"type": "boolean",
+					"value": true,
+					"hint": "Show program duration on program card."
+				}
+			]
+		}
+	]
 }

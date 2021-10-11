@@ -10,43 +10,47 @@
 html,
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
   overflow-x: hidden;
 }
 
 .bg_primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 
 .bg_secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color) !important;
 }
 
 .color_primary {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .color_secondary {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
 .color_tertiary {
-  color: var(--tertiary-color);
+  color: var(--tertiary-color) !important;
 }
 
 /* Top Menu Style  */
 
-.hero_banner .top_menu--logo {
-  margin-right: 1rem;
+.top_menu {
+  padding: 25px 0 !important;
 }
 
-.hero_banner .top_menu .container a:hover {
-  color: var(--primary-color);
+.top_menu--logo {
+  margin-right: 1rem;
 }
 
 .top_menu .container a {
   font-size: 18px;
   font-weight: 500;
+}
+
+.top_menu .container a:hover {
+  color: var(--primary-color) !important;
 }
 
 .top_menu .container .top_menu--link {
@@ -62,23 +66,23 @@ body {
   --d: 100%;
 }
 
-.hero_banner .top_menu .container .common-page-button {
+.top_menu .container .common-page-button {
   background-color: transparent;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color) !important;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   padding: 0.5rem 2rem;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   transition: 0.5s;
 }
 
-.hero_banner .top_menu .container .common-page-button:hover {
+.top_menu .container .common-page-button:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: #fff !important;
 }
 
-.hero_banner .top_menu .container .sign-in {
+.top_menu .container .sign-in {
   margin-left: 1rem;
 }
 
@@ -403,9 +407,11 @@ body {
     height: 95vh;
   }
 
+  .hero_banner .hero_banner--main .banner-swiper-logo.right_25 {
+    right: 25%;
+  }
+
   .hero_banner .hero_banner--main .banner-swiper-logo {
-    top: 20%;
-    right: 10%;
     height: 200px;
   }
 
@@ -446,8 +452,6 @@ body {
   /* Home Section Style */
 
   .hero_banner .hero_banner--main .banner-swiper-logo {
-    top: 20%;
-    right: 10%;
     height: 250px;
   }
 
