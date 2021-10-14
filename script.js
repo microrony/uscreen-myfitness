@@ -81,3 +81,20 @@ var swiper = new Swiper('.testimonials-swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+var swiper = new Swiper('.about-page-swiper', {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  spaceBetween: 40,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  speed: 500,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
