@@ -98,3 +98,30 @@ var swiper = new Swiper('.about-page-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+(function(){
+	const galleryTabsList = document.querySelector('.gallery-tabs-list');
+	const galleryTabs = document.querySelectorAll('.gallery-tab');
+	const galleryContents = document.querySelectorAll('.gallery-tab-content');
+
+	galleryTabsList.addEventListener('click', toggleTabs);
+
+  function toggleTabs(e) {
+		if (e.target && e.target.nodeName === 'LI') {
+			//change tabs
+		  for (let i = 0; i < galleryTabs.length; i++) {
+				galleryTabs[i].classList.remove('active');
+			}
+			e.target.classList.toggle('active');
+
+			//change contents
+			for (let i = 0; i < galleryContents.length; i++) {
+				galleryContents[i].classList.remove('active');
+			}
+
+			const tabID = `#${e.target.dataset.tabId}`;
+
+			document.querySelector(tabID).classList.toggle('active');
+		}
+	}
+})();

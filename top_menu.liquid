@@ -1,13 +1,20 @@
+{%- case template -%}
+  {%- when 'index'-%}
+	  {%- assign logos = 'https://s3.amazonaws.com/unode1/assets/24958/P9EJgsKSTtCXDX2Mur0b_nav_logo.svg' -%}
+	{%- else -%}
+	{%- assign logos = 'https://s3.amazonaws.com/unode1/assets/24958/kqhTVZiFRquQyetwCfsP_nav_logo_black.png' -%}
+{%- endcase -%}
+
 <div class="top_menu py-6">
   <div class="container">
     <div class="top_menu--logo">
       <a href="/">
-        {% if settings.header.logo != "" %}
+        {% if logos != "" %}
         <img
-          src="{{ settings.header.logo | image_url, width: 66 }}"
-          data-full="{{ settings.header.logo | image_url, width: 132 }}"
-          srcset="{{ settings.header.logo | image_url, width: 132 }},
-                {{ settings.header.logo | image_url, width: 264 }} 2x"
+          src="{{ logos | image_url, width: 66 }}"
+          data-full="{{ logos | image_url, width: 132 }}"
+          srcset="{{ logos | image_url, width: 132 }},
+                {{ logos | image_url, width: 264 }} 2x"
           data-controller="progressive"
           data-target="progressive.image"
           class="image preview"
@@ -91,14 +98,14 @@
     {% endif %} {% when '/dashboard' %} {% unless user.guest %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block"
+      class="top_menu--link py-2 d-none d-md-inline-block me-auto"
     >
       {{ link.title }}
     </a>
     {% endunless %} {% when '/sign_out' %} {% unless user.guest %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-lg-inline-block"
+      class="top_menu--link py-2 d-none d-lg-inline-block common-page-button ms-auto"
     >
       {{ link.title }}
     </a>

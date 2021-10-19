@@ -875,13 +875,6 @@
 			"description": "Settings for Header block",
 			"fields": [
 				{
-					"id": "logo",
-					"title": "Logo",
-					"type": "image",
-					"value": "https://unode1.s3.amazonaws.com/24958/uploads/f4352098-d8ba-4907-a251-a7b0390e4f88.svg",
-					"hint": ""
-				},
-				{
 					"id": "logo_size",
 					"title": "Logo Size",
 					"type": "range",
@@ -894,14 +887,14 @@
 					"id": "background_color",
 					"title": "Header Background Color",
 					"type": "color",
-					"value": "#f6f5f6",
+					"value": "#ffffff",
 					"hint": "Note: background color works with every page except Home page."
 				},
 				{
 					"id": "links_color",
 					"title": "Header Links Color",
 					"type": "color",
-					"value": "#141516",
+					"value": "#282B31",
 					"hint": "Note: Header Links color works with every page except Home page."
 				}
 			]

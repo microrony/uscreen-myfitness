@@ -1,25 +1,139 @@
 <div>
   {% include 'top_menu' %}
-	<div class="gallery_page py-20">
-  <div class="container flex flex-col items-center">
-    <div class="content max-w-5xl text-center">
-      <h1 class="md_big_title font-bold"><span class="color_primary">May Yang’s </span>Gallery
-      </h1>
+  <div class="gallery_page py-20">
+    <div class="container">
+      <div class="flex flex-col items-center">
+        <h1 class="md_big_title font-bold text-center">
+          <span class="color_primary">May Yang’s
+          </span>Gallery
+        </h1>
+        <nav>
+          <ul class="gallery-tabs-list flex text-2xl font-bold my-12">
+            <li class="gallery-tab active" data-tab-id="tab1">All</li>
+            <li class="gallery-tab" data-tab-id="tab2">MY Studios</li>
+            <li class="gallery-tab" data-tab-id="tab3">MY Events</li>
+            <li class="gallery-tab" data-tab-id="tab4">MY Juniors</li>
+            <li class="gallery-tab" data-tab-id="tab5">MY Travel</li>
+          </ul>
+        </nav>
+
+        <div class="content-section">
+          <div class="gallery-tab-content active" id="tab1">
+            <div class="grid grid-cols-4 gap-8">
+              <div>
+                <img alt="HIIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+              <div>
+                <img alt="HIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+              <div>
+                <img alt="HIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+              <div>
+                <img alt="HIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-tab-content" id="tab2">
+            <div class="grid grid-cols-4 gap-8">
+              <div>
+                <img alt="HIIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+              <div>
+                <img alt="HIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+              <div>
+                <img alt="HIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+              <div>
+                <img alt="HIT" class="w-full h-full object-cover" src="https://s3.amazonaws.com/unode1/assets/24958/tAu7u8GIRvqGQwCu7luK_program_img2.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-tab-content" id="tab3">content-3</div>
+          <div class="gallery-tab-content" id="tab4">content-4</div>
+          <div class="gallery-tab-content" id="tab5">content-5</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
 
 <style>
-  .gallery_page {
-   
+
+  .gallery_page {}
+
+  .gallery_page .container {}
+
+  .gallery_page li {
+    list-style: none;
+    color: #76797E;
   }
 
-  .gallery_page .container {
-    
+  .gallery_page .gallery-tab {
+    margin-right: 4rem;
   }
 
-  .gallery_page  .content {
-    
+  .gallery_page .gallery-tab:last-child {
+    margin-right: 0;
+  }
+
+  .gallery-tab.active {
+    color: #2bbcbe;
+    position: relative;
+  }
+
+  .gallery-tab.active:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background: #2bbcbe;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .gallery-tab-content {
+    display: none;
+    opacity: 0;
+
+    -webkit-animation: display-none-transition 1s ease;
+    animation: display-none-transition 1s ease;
+  }
+
+  .content-section .active {
+    display: block;
+    opacity: 1;
+  }
+
+  @keyframes display-none-transition {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes display-none-transition {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 </style>
