@@ -14,6 +14,16 @@ body {
   overflow-x: hidden;
 }
 
+.page {
+	min-height: 90vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.header {
+	padding: 0 !important;
+}
+
 .bg_primary {
   background-color: var(--primary-color) !important;
 }
@@ -32,6 +42,10 @@ body {
 
 .color_tertiary {
   color: var(--tertiary-color) !important;
+}
+
+.md_big_title {
+	font-size: 1.5rem;
 }
 
 /* Top Menu Style  */
@@ -119,8 +133,12 @@ body {
   top: 50%;
 }
 
-.hero_banner .hero_banner--main .swiper-button-next:after,
+.hero_banner .hero_banner--main
 .swiper-button-prev:after {
+  font-size: 80px;
+}
+
+.hero_banner .hero_banner--main .swiper-button-next:after {
   font-size: 80px;
 }
 

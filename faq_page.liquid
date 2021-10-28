@@ -1,0 +1,168 @@
+<div class="faq_page py-20">
+  <div class="container flex flex-col items-center">
+    <h1 class="text-center font-bold md_big_title">FAQ</h1>
+
+    <div class="accordionWrapper max-w-4xl my-20">
+      <div class="accordionItem close">
+        <div class="accordionItemHeading">
+          <h2>Which payment methods does MYFitness accept?</h2>
+          <div class="faq-chevron-down">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-times"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="accordionItemContent">
+          <p>
+            Currently MYFitness accepts various credit card payments (VISA,
+            Mastercard, Maestro, DISCOVER, and AMEX).
+          </p>
+        </div>
+      </div>
+
+      <div class="accordionItem close">
+        <div class="accordionItemHeading">
+          <h2>How do I reset my password?</h2>
+          <div class="faq-chevron-down">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-times"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="accordionItemContent">
+          <p>
+            In case you have forgotten or no longer know your MYFitness
+            password, you can reset it without being logged in. You will only
+            need access to the email that has been used to register your
+            account.
+          </p>
+          <ul>
+            <li>
+              1. In order to reset your password, navigate to the login page.
+              Press "Log in" at the top right corner of the page.
+            </li>
+            <li>
+              2. Once you click this link, you will be required to enter the
+              email address with which you signed up to MYFitness. Once you have
+              entered the associated email, press 'send instructions'. You will
+              receive a password reset link per email.
+            </li>
+            <li>
+              3. Click on the link in the email sent to you in order to reset
+              your password and regain access to your MYFitness account.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordionItem close">
+        <div class="accordionItemHeading">
+          <h2>
+            What benefits does the 3 month and 12 month online subscription
+            have?
+          </h2>
+          <div class="faq-chevron-down">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-times"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="accordionItemContent">
+          <p>
+            Upon subscribing to either plan, members will receive unlimited
+            access to MYFitness content which includes 6 categories of fitness
+            programs: MY Pilates, MY Cardio, MY Dance, MY Body, MY Equipment and
+            MY Family; for one fixed price (billed quarterly or yearly depending
+            on the chosen plan).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .faq_page {
+    background-image: url('https://s3.amazonaws.com/unode1/assets/24958/rumEfi9SJWoAYrETjMQs_ballet_dance_bg.jpg');
+    background-size: contain;
+  }
+
+  .accordionItemHeading {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordionItemHeading:after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    right: 0;
+    background: #4d66ff;
+    height: 2px;
+    border-radius: 1px;
+    opacity: 0.4;
+  }
+
+  .accordionItemContent {
+    font-size: 18px;
+    color: #594d6d;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .accordionItemContent ul {
+    margin-top: 2rem;
+  }
+
+  .accordionItemContent li {
+    margin-bottom: 1rem;
+  }
+
+  .close .accordionItemHeading .faq-times {
+    display: none;
+  }
+
+  .open .accordionItemHeading .faq-chevron-down {
+    display: none;
+  }
+
+  .close .accordionItemContent {
+    height: 0px;
+    transition: height 1s ease-out;
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    display: block;
+  }
+  .open .accordionItemContent {
+    width: 100%;
+    display: block;
+    -webkit-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: top;
+    -o-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease;
+    -ms-transition: -ms-transform 0.4s ease;
+    transition: transform 0.4s ease;
+  }
+
+	@media only screen and (max-width: 600px) {
+		.accordionItemHeading {
+    font-size: 14px;
+		}
+
+		.accordionItemContent {
+			font-size: 14px;
+		}
+	}
+</style>

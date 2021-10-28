@@ -102,14 +102,37 @@
     >
       {{ link.title }}
     </a>
-    {% endunless %} {% when '/sign_out' %} {% unless user.guest %}
+    {% endunless %}
+		
+		{% when '/catalog' %} {% unless user.guest %}
+    <a
+      href="{{ link.url | link }}"
+      class="top_menu--link py-2 d-none d-md-inline-block"
+    >
+      {{ link.title }}
+    </a>
+    {% endunless %}
+		
+		{% when '/sign_out' %} {% unless user.guest %}
     <a
       href="{{ link.url | link }}"
       class="top_menu--link py-2 d-none d-lg-inline-block common-page-button ms-auto"
     >
       {{ link.title }}
+    </a> 
+    {% endunless %} 
+
+
+		{% when '/pages/explore' %} {% if user.guest %}
+    <a
+      href="{{ link.url | link }}"
+      class="top_menu--link py-2 d-none d-md-inline-block"
+    >
+      {{ link.title }}
     </a>
-    {% endunless %} {% when '/' %} {% if user.guest %}
+    {% endif %}
+		
+		{% when '/' %} {% if user.guest %}
     <a
       href="{{ link.url | link }}"
       class="
