@@ -101,30 +101,30 @@ var swiper = new Swiper('.about-page-swiper', {
 
 (function () {
   const galleryTab = () => {
-    const galleryTabsList = document.querySelector('.gallery-tabs-list');
-    const galleryTabs = document.querySelectorAll('.gallery-tab');
-    const galleryContents = document.querySelectorAll('.gallery-tab-content');
+      const galleryTabsList = document.querySelector('.gallery-tabs-list');
+      const galleryTabs = document.querySelectorAll('.gallery-tab');
+      const galleryContents = document.querySelectorAll('.gallery-tab-content');
 
-    if (galleryTabsList && galleryTabs && galleryContents) {
-      galleryTabsList.addEventListener('click', toggleTabs);
+      if (galleryTabsList && galleryTabs && galleryContents) {
+        galleryTabsList.addEventListener('click', toggleTabs);
 
-      function toggleTabs(e) {
-        if (e.target && e.target.nodeName === 'LI') {
-          //change tabs
-          for (let i = 0; i < galleryTabs.length; i++) {
-            galleryTabs[i].classList.remove('active');
+        function toggleTabs(e) {
+          if (e.target && e.target.nodeName === 'LI') {
+            //change tabs
+            for (let i = 0; i < galleryTabs.length; i++) {
+              galleryTabs[i].classList.remove('active');
+            }
+            e.target.classList.toggle('active');
+
+            //change contents
+            for (let i = 0; i < galleryContents.length; i++) {
+              galleryContents[i].classList.remove('active');
+            }
+
+            const tabID = `#${e.target.dataset.tabId}`;
+
+            document.querySelector(tabID).classList.toggle('active');
           }
-          e.target.classList.toggle('active');
-
-          //change contents
-          for (let i = 0; i < galleryContents.length; i++) {
-            galleryContents[i].classList.remove('active');
-          }
-
-          const tabID = `#${e.target.dataset.tabId}`;
-
-          document.querySelector(tabID).classList.toggle('active');
-        }
       }
     }
   };
@@ -132,43 +132,38 @@ var swiper = new Swiper('.about-page-swiper', {
   galleryTab();
 
   const galleryModal = () => {
-		
-    const galleryModals = document.querySelectorAll('#gallery-modal-btn');
-    const galleryCloseButtons = document.querySelectorAll('#close-btn');
+    if (window.innerWidth > 600) {
+    const galleryModals = document.querySelectorAll('.gallery-modal-btn');
+    const galleryCloseButtons = document.querySelectorAll('.modal-close-btn');
     const galleryModalOverlays = document.querySelectorAll(
-      '#gallery-modal-overlay'
+      '.gallery-modal-overlay'
     );
 
+    if (galleryModals && galleryCloseButtons && galleryModalOverlays) {
+      const openModal = e => {
+        e.currentTarget.parentNode.children[1].classList.toggle('is-visible');
+        e.currentTarget.parentNode.children[2].classList.toggle('is-visible');
+      };
 
-    galleryModals.map(element => {
-      element.addEventListener('click', function () {
-        document
-          .getElementById('gallery-modal-overlay')
-          .classList.add('is-visible');
-        document.getElementById('gallery-modal').classList.add('is-visible');
-      });
-    });
+      const closeModal = e => {
+        e.currentTarget.parentNode.parentNode.children[1].classList.toggle(
+          'is-visible'
+        );
+        e.currentTarget.parentNode.parentNode.children[2].classList.toggle(
+          'is-visible'
+        );
+      };
 
-    galleryCloseButtons.map(element => {
-      element.addEventListener('click', function () {
-        document
-          .getElementById('gallery-modal-overlay')
-          .classList.remove('is-visible');
-        document.getElementById('gallery-modal').classList.remove('is-visible');
-      });
-    });
-
-    galleryModalOverlays.map(element => {
-      element.addEventListener('click', function () {
-        document
-          .getElementById('gallery-modal-overlay')
-          .classList.remove('is-visible');
-        document.getElementById('gallery-modal').classList.remove('is-visible');
-      });
-    });
+      for (let i = 0; i < galleryModals.length; i++) {
+        galleryModals[i].addEventListener('click', e => openModal(e));
+        galleryModalOverlays[i].addEventListener('click', e => openModal(e));
+        galleryCloseButtons[i].addEventListener('click', e => closeModal(e));
+      }
+    }
+    }
   };
 
-  // galleryModal();
+  galleryModal();
 
   const faqAccordion = () => {
     var accItem = document.getElementsByClassName('accordionItem');
