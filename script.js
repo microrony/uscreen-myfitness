@@ -87,7 +87,7 @@ var swiper = new Swiper('.about-page-swiper', {
     delay: 3000,
     disableOnInteraction: false,
   },
-  spaceBetween: 40,
+  spaceBetween: 20,
   slidesPerView: 'auto',
   centeredSlides: true,
   speed: 300,
@@ -97,6 +97,11 @@ var swiper = new Swiper('.about-page-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+	breakpoints: {
+		768: {
+			spaceBetween: 40,
+		},
+	},
 });
 
 if (window.innerWidth < 640) {

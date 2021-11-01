@@ -1,8 +1,8 @@
-<div class="featured_on_fitness py-20 flex flex-col items-center">
+<div class="featured_on_fitness py-10 md:py-20 flex flex-col items-center">
   <h2 class="md_big_title font-bold text-center">
     <span class="color_primary">May Yang, </span>featured on fitness
   </h2>
-  <p class="text-lg color_tertiary mt-4 mb-10 text-center max-w-4xl">
+  <p class="md:text-lg color_tertiary mt-4 mb-10 text-center max-w-4xl">
     May and her fitness routines have been featured in Shape, The Peak,
     WestEast, and Her World magazines; on “Morning Fitness” on Singapore TV; and
     in the Straits Times newspaper.
@@ -59,4 +59,16 @@
   .about-page-swiper .swiper-button-prev {
     left: 80px;
   }
+
+	@media only screen and (max-width: 1280px) {
+		.about-page-swiper .swiper-slide {
+    width: 55% !important;
+  }
+	}
+
+	@media only screen and (max-width: 640px) {
+		.about-page-swiper .swiper-slide {
+    width: 85% !important;
+  }
+	}
 </style>
