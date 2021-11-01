@@ -31,35 +31,31 @@
     justify-content: space-between;
     align-items: center;
     height: inherit;
-		max-width: 85rem;
+    max-width: 85rem;
   }
 
+  @media only screen and (max-width: 1024px) {
+    .about_page_banner {
+      height: 40vh;
+    }
 
-	@media only screen and (max-width: 1024px) {
-		.about_page_banner {
-			height: 40vh;
-		}
+    .about_page_banner .content h1 {
+      font-size: 1.5rem;
+    }
 
-		.about_page_banner .content h1 {
-			font-size: 1.5rem;
-		}
+    .about_page_banner .content img {
+      display: block;
+      height: 150px;
+    }
+  }
 
-		.about_page_banner .content img {
-			display: block;
-			height: 150px;
-		}
-	} 
+  @media only screen and (max-width: 640px) {
+    .about_page_banner .content h1 {
+      font-size: 0.8rem;
+    }
 
-	@media only screen and (max-width: 640px) {
-		.about_page_banner .content h1 {
-			font-size: .8rem;
-		}
-
-		.about_page_banner .content img {
-			height: 80px;
-		}
-	}
-
-
-
+    .about_page_banner .content img {
+      height: 80px;
+    }
+  }
 </style>

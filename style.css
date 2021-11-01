@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+* {
+	border: 1px solid black;
+}
+
 :root {
   --primary-color: #2bbcbe;
   --secondary-color: #282b31;
