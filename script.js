@@ -2,10 +2,10 @@ let heroProgressBar = document.querySelector('.hero-progress-bar');
 
 var swiper = new Swiper('.swiper-container', {
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
-  speed: 500,
+  speed: 300,
   loop: true,
   grabCursor: true,
   navigation: {
@@ -43,10 +43,10 @@ var swiper = new Swiper('.about-swiper-container', {
     },
   },
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
-  speed: 500,
+  speed: 300,
   loop: true,
   grabCursor: true,
   on: {
@@ -69,11 +69,11 @@ var swiper = new Swiper('.about-swiper-container', {
 
 var swiper = new Swiper('.testimonials-swiper-container', {
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   spaceBetween: 30,
-  speed: 500,
+  speed: 300,
   loop: true,
   grabCursor: true,
   navigation: {
@@ -84,13 +84,13 @@ var swiper = new Swiper('.testimonials-swiper-container', {
 
 var swiper = new Swiper('.about-page-swiper', {
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   spaceBetween: 40,
   slidesPerView: 'auto',
   centeredSlides: true,
-  speed: 500,
+  speed: 300,
   loop: true,
   grabCursor: true,
   navigation: {
@@ -98,6 +98,18 @@ var swiper = new Swiper('.about-page-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+if (window.innerWidth < 640) {
+	var swiper = new Swiper('.members-swiper-container', {
+		autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 300,
+  loop: true,
+  grabCursor: true
+	});
+}
 
 (function () {
   const galleryTab = () => {

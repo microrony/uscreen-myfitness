@@ -174,7 +174,7 @@ body {
   transition: width linear;
   transition-delay: unset;
   width: 100%;
-  transition-duration: 5s;
+  transition-duration: 3s;
 }
 
 .hero_banner--main .swiper-slide {
@@ -254,7 +254,7 @@ body {
   transition: width linear;
   transition-delay: unset;
   width: 100%;
-  transition-duration: 5s;
+  transition-duration: 3s;
 }
 
 .about-swiper-container .swiper-slide {
