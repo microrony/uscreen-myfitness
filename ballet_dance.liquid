@@ -1,15 +1,15 @@
-<div class="ballet_dance pt-40">
+<div class="ballet_dance pt-10 md:pt-20 xl:pt-40">
   <div class="container flex justify-center">
-    <div class="content grid grid-cols-2 items-center gap-20">
-      <div class="relative h-full w-full">
-        <div class="flex">
+    <div class="content grid xl:grid-cols-2 items-center gap-20">
+      <div class="mx-auto relative h-full order-2 xl:order-2 md:max-w-xl xl:max-w-6xl">
+        <div class="flex justify-center">
           <div class="image1 mr-2">
             <img
               src="https://s3.amazonaws.com/unode1/assets/24958/kdlMRDXWQRmWhQbFF5ux_ballet_dance1.jpg"
               alt="Ballet & Contemporary Dance, Performing in New York"
             />
           </div>
-          <div class="image2 -mt-12 mr-24">
+          <div class="image2 -mt-12 mr-10 md:mr-24">
             <img
               src="https://s3.amazonaws.com/unode1/assets/24958/wZ0u7WMPQqqum8AFaTh4_ballet_dance2.jpg"
               alt="Ballet & Contemporary Dance, Performing in New York"
@@ -23,12 +23,12 @@
           />
         </div>
       </div>
-      <div>
+      <div class="order-1 xl:order-2">
         <h2 class="md_big_title font-bold">
           <span class="color_primary">Ballet & Contemporary Dance, </span
           >Performing in New York
         </h2>
-        <p class="text-lg color_tertiary mt-8">
+        <p class="md:text-lg color_tertiary mt-8">
           Her passion for dance and fitness then took her to Australia, where
           she attained a Distinction in her Bachelor of Dance at Queensland
           University of Technology. She performed with a Sydney dance company
@@ -53,14 +53,34 @@
     max-width: 85rem;
   }
 
-  .ballet_dance .content .image1 {
-  }
-
-  .ballet_dance .content .image2 {
-  }
-
   .ballet_dance .content .image3 {
     right: 0;
-    bottom: -14rem;
+    bottom: -15rem;
   }
+
+	@media only screen and (max-width: 1536px) {
+		.ballet_dance .content .image3 {
+    bottom: -10rem;
+		max-width: 400px;
+  }
+	}
+
+	@media only screen and (max-width: 1280px) {
+		.ballet_dance {
+			padding-bottom: 10rem;
+		}
+		.ballet_dance .content .image3 {
+		max-width: 350px;
+  }
+	}
+
+	@media only screen and (max-width: 640px) {
+		.ballet_dance {
+			padding-bottom: 7rem;
+		}
+		.ballet_dance .content .image3 {
+    bottom: -6rem;
+    max-width: 230px;
+  }
+	}
 </style>
