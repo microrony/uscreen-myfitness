@@ -98,7 +98,7 @@
     {% endif %} {% when '/dashboard' %} {% unless user.guest %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block me-auto"
+      class="top_menu--link py-2 d-none d-lg-inline-block me-auto"
     >
       {{ link.title }}
     </a>
@@ -107,7 +107,7 @@
 		{% when '/catalog' %} {% unless user.guest %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block"
+      class="top_menu--link py-2 d-none d-lg-inline-block"
     >
       {{ link.title }}
     </a>
@@ -126,7 +126,7 @@
 		{% when '/pages/explore' %} {% if user.guest %}
     <a
       href="{{ link.url | link }}"
-      class="top_menu--link py-2 d-none d-md-inline-block"
+      class="top_menu--link py-2 d-none d-lg-inline-block"
     >
       {{ link.title }}
     </a>

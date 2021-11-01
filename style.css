@@ -51,7 +51,7 @@ body {
 /* Top Menu Style  */
 
 .top_menu {
-  padding: 0 !important;
+  padding: 4px !important;
 }
 
 .top_menu--logo {
@@ -343,10 +343,6 @@ body {
 	.top_menu {
 		padding: 25px 0 !important;
 	}
-
-  .hero_banner--main .swiper-slide {
-    height: 80vh;
-  }
 
   .hero_banner .hero_banner--main .banner-swiper-logo {
     top: 20%;

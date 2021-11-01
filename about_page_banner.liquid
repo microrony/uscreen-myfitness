@@ -1,7 +1,7 @@
 <div class="about_page_banner">
   {% include 'top_menu' %}
-  <div class="container">
-    <div class="content mx-20">
+  <div class="container flex justify-center">
+    <div class="content w-full">
       <h1 class="md_big_title font-bold">
         About<span class="color_primary"> May Yang</span>
       </h1>
@@ -15,7 +15,7 @@
 
 <style>
   .about_page_banner {
-    background: url('https://s3.amazonaws.com/unode1/assets/24958/q6xuCgpeT76gl7uaX3rV_about_page_hero_banner.jpg');
+    background: url('https://s3.amazonaws.com/unode1/assets/24958/jFVxiezRmmEhUez9P5fw_about_page_hero_banner1.jpg');
     height: 95vh;
     background-size: cover;
     background-position: center;
@@ -31,5 +31,35 @@
     justify-content: space-between;
     align-items: center;
     height: inherit;
+		max-width: 85rem;
   }
+
+
+	@media only screen and (max-width: 1024px) {
+		.about_page_banner {
+			height: 40vh;
+		}
+
+		.about_page_banner .content h1 {
+			font-size: 1.5rem;
+		}
+
+		.about_page_banner .content img {
+			display: block;
+			height: 150px;
+		}
+	} 
+
+	@media only screen and (max-width: 640px) {
+		.about_page_banner .content h1 {
+			font-size: .8rem;
+		}
+
+		.about_page_banner .content img {
+			height: 80px;
+		}
+	}
+
+
+
 </style>
