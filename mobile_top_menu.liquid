@@ -7,7 +7,7 @@
     <i class="fas fa-bars fa-2x"></i>
   </a>
   <div
-    class="inline-block d-lg-none mobile_menu"
+    class="inline-block d-lg-none mobile_menu hidden"
     data-target="mobile-menu.content"
   >
     <a
@@ -72,11 +72,33 @@
     <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>
-    {% endunless %} {% when '/sign_out' %} {% unless user.guest %}
+    {% endunless %} 
+		
+		{% when '/catalog' %} {% unless user.guest %}
+    <a
+      href="{{ link.url | link }}"
+      class="mobile_menu--link py-2"
+    >
+      {{ link.title }}
+    </a>
+    {% endunless %}
+		
+		{% when '/sign_out' %} {% unless user.guest %}
     <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>
-    {% endunless %} {% else %}
+    {% endunless %}
+		
+		{% when '/pages/explore' %} {% if user.guest %}
+    <a
+      href="{{ link.url | link }}"
+      class="mobile_menu--link py-2"
+    >
+      {{ link.title }}
+    </a>
+    {% endif %}
+		
+		{% else %}
     <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
       {{ link.title }}
     </a>

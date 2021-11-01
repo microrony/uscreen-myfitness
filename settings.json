@@ -122,7 +122,7 @@
 							"id": "card1_subtitle",
 							"title": "Card 1: Subtitle",
 							"type": "string",
-							"value": "Subscription"
+							"value": "Online Subscription"
 						},
 						{
 							"id": "card1_currency",
@@ -146,7 +146,7 @@
 							"id": "card1_trial_text",
 							"title": "Card 1: Trial Text",
 							"type": "text",
-							"value": "7-day free trial Renews automatically Cancel anytime"
+							"value": "7-day free trial. Renews automatically. Cancel anytime"
 						},
 						{
 							"id": "card1_button_text",
@@ -171,7 +171,7 @@
 							"id": "card2_subtitle",
 							"title": "Card 2: Subtitle",
 							"type": "string",
-							"value": "Subscription"
+							"value": "Online Subscription"
 						},
 						{
 							"id": "card2_currency",
@@ -195,7 +195,7 @@
 							"id": "card2_trial_text",
 							"title": "Card 2: Trial Text",
 							"type": "text",
-							"value": "7-day free trial Renews automatically Cancel anytime"
+							"value": "7-day free trial. Renews automatically. Cancel anytime"
 						},
 						{
 							"id": "card2_button_text",
@@ -287,7 +287,7 @@
 							"id": "second_small_title",
 							"title": "Second Small Title",
 							"type": "string",
-							"value": " - Studios"
+							"value": " - Members"
 						},
 						{
 							"id": "studio_image1",
@@ -322,37 +322,6 @@
 					]
 				},
 				{
-					"id": "who_will_guid_you",
-					"title": "Who will guide you",
-					"description": "Settings for 'Who will guid you' section",
-					"fields": [
-						{
-							"id": "active",
-							"title": "Show/Hide Section",
-							"type": "boolean",
-							"value": true
-						},
-						{
-							"id": "title",
-							"title": "Title",
-							"type": "string",
-							"value": "WHO WILL GUIDE YOU?"
-						},
-						{
-							"id": "subtitle",
-							"title": "Subtitle",
-							"type": "text",
-							"value": "The best teachers always seem to have a few things in common: they see you, they hear you, and they encourage you forward without forcing your steps. They are there for you, in whatever way you need at the moment. Wanderlust provides just that: a carefully-curated faculty of yogic guides who will nurture your growth, in person and online."
-						},
-						{
-							"id": "iframe",
-							"title": "iframe",
-							"type": "text",
-							"value": "<iframe width='560' height='315' src='https://www.youtube.com/embed/LFWgRLC3iF4' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
-						}
-					]
-				},
-				{
 					"id": "our_programs",
 					"title": "Our Programs",
 					"description": "Modify the settings of Our Programs Section",
@@ -379,7 +348,7 @@
 							"id": "element_1_title",
 							"title": "Block 1: Title",
 							"type": "string",
-							"value": "MY PILATES"
+							"value": "MY Pilates"
 						},
 						{
 							"id": "element_2_image",
@@ -391,7 +360,7 @@
 							"id": "element_2_title",
 							"title": "Block 2: Title",
 							"type": "string",
-							"value": "MY CARDIO"
+							"value": "MY Cardio"
 						},
 						{
 							"id": "element_3_image",
@@ -403,7 +372,7 @@
 							"id": "element_3_title",
 							"title": "Block 3: Title",
 							"type": "string",
-							"value": "MY DANCE"
+							"value": "MY Dance"
 						},
 						{
 							"id": "element_4_image",
@@ -415,7 +384,7 @@
 							"id": "element_4_title",
 							"title": "Block 4: Title",
 							"type": "string",
-							"value": "MY FAMILY"
+							"value": "MY Family"
 						},
 						{
 							"id": "element_5_image",
@@ -427,7 +396,7 @@
 							"id": "element_5_title",
 							"title": "Block 5: Title",
 							"type": "string",
-							"value": "MY EQUIPMENT"
+							"value": "MY Equipment"
 						},
 						{
 							"id": "element_6_image",
@@ -439,13 +408,13 @@
 							"id": "element_6_title",
 							"title": "Block 6: Title",
 							"type": "string",
-							"value": "MY BODY"
+							"value": "MY Body"
 						},
 						{
 							"id": "button_text",
 							"title": "Button Text",
 							"type": "string",
-							"value": "See all programs"
+							"value": "Explore"
 						},
 						{
 							"id": "button_url",

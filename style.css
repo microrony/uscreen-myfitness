@@ -15,13 +15,13 @@ body {
 }
 
 .page {
-	min-height: 90vh;
-	position: relative;
-	overflow: hidden;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
-	padding: 0 !important;
+  padding: 0 !important;
 }
 
 .bg_primary {
@@ -45,13 +45,13 @@ body {
 }
 
 .md_big_title {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Top Menu Style  */
 
 .top_menu {
-  padding: 25px 0 !important;
+  padding: 0 !important;
 }
 
 .top_menu--logo {
@@ -133,8 +133,7 @@ body {
   top: 50%;
 }
 
-.hero_banner .hero_banner--main
-.swiper-button-prev:after {
+.hero_banner .hero_banner--main .swiper-button-prev:after {
   font-size: 80px;
 }
 
@@ -179,7 +178,13 @@ body {
 }
 
 .hero_banner--main .swiper-slide {
-  height: 50vh;
+  height: 40vh;
+}
+
+.hero_banner .hero_banner--main .banner-swiper-logo {
+  top: 35%;
+  right: 15%;
+  height: 80px;
 }
 
 /* Our Pricing Plan Style */
@@ -314,7 +319,14 @@ body {
 
 /* Responsive Style */
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
+	.top_20 {
+		top: 20% !important;
+	}
+
+	.right_10 {
+		right: 10% !important;
+	}
 }
 @media (min-width: 768px) {
   .md_big_title {
@@ -327,6 +339,10 @@ body {
   }
 
   /* Home Section Style */
+
+	.top_menu {
+		padding: 25px 0 !important;
+	}
 
   .hero_banner--main .swiper-slide {
     height: 80vh;
