@@ -74,22 +74,7 @@
     </a>
     {% endunless %} 
 		
-		{% when '/catalog' %} {% unless user.guest %}
-    <a
-      href="{{ link.url | link }}"
-      class="mobile_menu--link py-2"
-    >
-      {{ link.title }}
-    </a>
-    {% endunless %}
-		
-		{% when '/sign_out' %} {% unless user.guest %}
-    <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
-      {{ link.title }}
-    </a>
-    {% endunless %}
-		
-		{% when '/pages/explore' %} {% if user.guest %}
+		{% when '/catalog' %} {% if user.subscriber? %}
     <a
       href="{{ link.url | link }}"
       class="mobile_menu--link py-2"
@@ -97,6 +82,21 @@
       {{ link.title }}
     </a>
     {% endif %}
+		
+		{% when '/sign_out' %} {% unless user.guest %}
+    <a href="{{ link.url | link }}" class="mobile_menu--link py-2">
+      {{ link.title }}
+    </a>
+    {% endunless %}
+		
+		{% when '/pages/explore' %} {% unless user.subscriber? %}
+    <a
+      href="{{ link.url | link }}"
+      class="mobile_menu--link py-2"
+    >
+      {{ link.title }}
+    </a>
+    {% endunless %}
 		
 		{% else %}
     <a href="{{ link.url | link }}" class="mobile_menu--link py-2">

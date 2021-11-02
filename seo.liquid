@@ -1,0 +1,243 @@
+{% comment %}
+  SEO data included in header
+{% endcomment %}
+
+{% case template %}
+
+  {% when "index" %}
+	<title>{{ settings.page_blocks.seo.title }} | {{ storefront.title }}</title>
+  <meta name="description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="{{ settings.page_blocks.seo.title }} | {{ storefront.title }}">
+  <meta itemprop="description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}">
+  <meta itemprop="image" content="{{ settings.header.logo | image_url, width: 132 }}">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ settings.page_blocks.seo.title }} | {{ storefront.title }}" />
+  <meta name="twitter:description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}" />
+  <meta name="twitter:image" content="{{ settings.header.logo | image_url, width: 132 }}" />
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{ settings.page_blocks.seo.title }}" >
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ storefront.url }}" >
+  <meta property="og:image:url" content="{{ settings.header.logo | image_url, width: 740 }}" >
+  <meta property="og:image:width" content="740" >
+  <meta property="og:image:height" content="420" >
+  <meta property="og:description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}" >
+  <meta property="og:site_name" content="{{ storefront.title }}" />
+  <link rel="canonical" href="{{ storefront.url }}" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "{{ settings.page_blocks.seo.title }}",
+    "description": "{{ settings.page_blocks.seo.description | truncate: 195 }}",
+    "provider": {
+      "@type": "Organization",
+      "name": "{{ storefront.title }}",
+      "sameAs": "{{ storefront.url }}"
+    }
+  }
+  </script>
+  <script type = 'application/ld+json' >
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "{{ storefront.url }}",
+      "@id": "{{ storefront.url }}/#organization",
+      "name": "{{ storefront.title }}",
+      "logo": "{{ settings.header.logo | image_url, width: 132 }}"
+    }
+  </script>
+  {% when "program" %}
+    <title>{{ program.meta_title | escape }} | {{ storefront.title }}</title>
+    <meta name="description" content="{{ program.meta_description | strip_html | escape | truncate: 195 }}">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ program.meta_title | escape }}">
+    <meta itemprop="description" content="{{ program.meta_description | strip_html | escape | truncate: 195 }}">
+    <meta itemprop="image" content="{{ program.main_poster | image_url, width: 740 }}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ program.meta_title | escape }}" />
+    <meta name="twitter:description" content="{{ program.meta_description | strip_html | escape | truncate: 195 }}" />
+    <meta name="twitter:image" content="{{ program.main_poster | image_url, width: 740 }}" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ program.meta_title | escape }}" >
+    <meta property="og:type" content="video.other" >
+    <meta property="og:url" content="{{ storefront.url}}/{{ program.url }}" >
+    <meta property="og:image" content="{{ program.main_poster | image_url, width: 740 }}" >
+    <meta property="og:description" content="{{ program.meta_description | strip_html | escape | truncate: 195 }}" >
+    <link rel="canonical" href="{{ storefront.url }}{{ program.url }}" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "{{ program.meta_title | escape }}",
+      "description": "{{ program.meta_description | strip_html | escape | truncate: 195 }}",
+      "thumbnailUrl": "{{ program.main_poster | image_url, width: 740 }}",
+      "uploadDate": "{{ program.release_date | datetime }}",
+      {% if program.raw_duration > 0 %}
+      "duration": "{{ program.iso8601_duration }}",
+      {% endif %}
+      "contentUrl": "{{ storefront.url | url_join: program.url }}"
+    }
+    </script>
+  {% when "category" %}
+    <title>{{ category.meta_title }} | {{ storefront.title }}</title>
+    <meta name="description" content="{{ category.meta_description | strip_html | escape | truncate: 195 }}">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ category.meta_title }}">
+    <meta itemprop="description" content="{{ category.meta_description | strip_html | escape | truncate: 195 }}">
+    <meta itemprop="image" content="{{ category.image | image_url, width: 740 }}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ category.meta_title }}" />
+    <meta name="twitter:description" content="{{ category.meta_description | strip_html | escape | truncate: 195 }}" />
+    <meta name="twitter:image" content="{{ storefront.image | image_url, width: 740 }}" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ category.meta_title }}" >
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ storefront.url }}{{ category.url }}" >
+    <meta property="og:image:url" content="{{ category.image | image_url, width: 740 }}" >
+    <meta property="og:description" content="{{ category.meta_description | strip_html | escape | truncate: 195 }}" >
+    <link rel="canonical" href="{{ storefront.url }}{{ category.url }}" />
+    <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "{{ category.meta_title }}",
+          "description": "{{ category.meta_description | strip_html | escape | truncate: 195 }}",
+          "publisher": {
+              "@type": "Organization",
+              "name": "{{ storefront.title }}"
+          }
+      }
+      </script>
+  {% when "author" %}
+    <title>{{ author.meta_title }} | {{ storefront.title }}</title>
+    <meta name="description" content="{{ author.meta_description | strip_html | escape | truncate: 195 }}"/>
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ author.meta_title }}">
+    <meta itemprop="description" content="{{ author.meta_description | strip_html | escape | truncate: 195 }}"/>
+    <meta itemprop="image" content="{{ author.avatar | image_url, width: 300 }}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ author.meta_title }}" />
+    <meta name="twitter:description" content="{{ author.meta_description | strip_html | escape | truncate: 195 }}" />
+    <meta name="twitter:image" content="{{ author.avatar | image_url, width: 300 }}" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ author.meta_title }}" >
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ storefront.url }}{{ author.url }}" />
+    <meta property="og:image:url" content="{{ author.avatar | image_url, width: 300 }}" />
+    <meta property="og:description" content="{{ author.meta_description | strip_html | escape | truncate: 195 }}" />
+    <link rel="canonical" href="{{ storefront.url }}{{ author.url }}" />
+    <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "{{ author.name }}",
+          "description": "{{ author.meta_description | strip_html | escape | truncate: 195 }}",
+          "publisher": {
+              "@type": "Organization",
+              "name": "{{ storefront.title }}"
+          }
+      }
+      </script>
+  {% when "page" %}
+    <title>{{ page.meta_title }} | {{ storefront.title }}</title>
+    <meta name="description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ page.meta_title }}">
+    <meta itemprop="description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}">
+    <meta itemprop="image" content="{{ settings.header.logo | image_url, width: 132 }}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ page.meta_title }}" />
+    <meta name="twitter:description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}" />
+    <meta name="twitter:image" content="{{ settings.header.logo | image_url, width: 132 }}" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ page.meta_title }}" >
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ storefront.url }}{{ page.slug }}" >
+    <meta property="og:image:url" content="{{ settings.header.logo | image_url, width: 132 }}" >
+    <meta property="og:description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}" >
+    <link rel="canonical" href="{{ storefront.url }}{{ page.url }}" />
+    <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "{{ page.meta_title }}",
+          "description": "{{ page.meta_description | strip_html | escape | truncate: 195 }}",
+          "publisher": {
+              "@type": "Organization",
+              "name": "{{ storefront.title }}"
+          }
+      }
+      </script>
+  {% when "catalog" %}
+      <title>{{ settings.page_blocks.seo.title }} | {{ storefront.title }}</title>
+      <meta name="description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}">
+      <!-- Schema.org markup for Google+ -->
+      <meta itemprop="name" content="{{ settings.page_blocks.seo.title }} | {{ storefront.title }}">
+      <meta itemprop="description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}">
+      <meta itemprop="image" content="{{ settings.header.logo | image_url, width: 132 }}">
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="{{ settings.page_blocks.seo.title }} | {{ storefront.title }}" />
+      <meta name="twitter:description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}" />
+      <meta name="twitter:image" content="{{ settings.header.logo | image_url, width: 132 }}" />
+      <!-- Open Graph data -->
+      <meta property="og:title" content="{{ settings.page_blocks.seo.title }}" >
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="{{ storefront.url }}/catalog" >
+      <meta property="og:image:url" content="{{ settings.header.logo | image_url, width: 740 }}" >
+      <meta property="og:image:width" content="740" >
+      <meta property="og:image:height" content="420" >
+      <meta property="og:description" content="{{ settings.page_blocks.seo.description | truncate: 195 }}" >
+      <meta property="og:site_name" content="{{ storefront.title }}" />
+      <link rel="canonical" href="{{ storefront.url }}/catalog" />
+      <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "WebPage",
+          "name": "Catalog",
+          "description": "{{ settings.page_blocks.seo.description | truncate: 195 }}",
+          "publisher": {
+              "@type": "Organization",
+              "name": "{{ storefront.title }}"
+          }
+      }
+      </script>
+{% else %}
+<title>{{ page.meta_title }} | {{ storefront.title }}</title>
+<meta name="description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}">
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="{{ page.meta_title }}">
+<meta itemprop="description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}">
+<meta itemprop="image" content="{{ settings.header.logo | image_url, width: 132 }}">
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ page.meta_title }}" />
+<meta name="twitter:description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}" />
+<meta name="twitter:image" content="{{ settings.header.logo | image_url, width: 132 }}" />
+<!-- Open Graph data -->
+<meta property="og:title" content="{{ page.meta_title }}" >
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ storefront.url }}{{ page.slug }}" >
+<meta property="og:image:url" content="{{ settings.header.logo | image_url, width: 132 }}" >
+<meta property="og:description" content="{{ page.meta_description | strip_html | escape | truncate: 195 }}" >
+<link rel="canonical" href="{{ storefront.url }}{{ page.url }}" />
+<script type="application/ld+json">
+	{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+			"name": "{{ page.meta_title }}",
+			"description": "{{ page.meta_description | strip_html | escape | truncate: 195 }}",
+			"publisher": {
+					"@type": "Organization",
+					"name": "{{ storefront.title }}"
+			}
+	}
+	</script>
+{% endcase %}

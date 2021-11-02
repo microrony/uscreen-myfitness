@@ -60,7 +60,31 @@
         >
           {{ link.title }}
         </a>
-        {% endunless %} {% else %}
+        {% endunless %}
+        
+        
+        {% when '/catalog' %} {% if user.subscriber? %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endif %}
+        
+        {% when '/pages/explore' %} {% unless user.subscriber? %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endunless %}
+        
+        
+        
+        
+        {% else %}
         <a
           href="{{ link.url | link }}"
           class="footer--link py-2 d-md-inline-block"
