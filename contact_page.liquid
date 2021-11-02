@@ -8,25 +8,40 @@
         This is a big one and i consider it one of the most important things for
         a designer to get right.
       </p>
-      <form action="">
+      <form action="https://submit-form.com/kRObH77p">
         <div class="flex flex-col md:flex-row mb-8 space-y-8 md:space-y-0">
           <input
             type="text"
             name="name"
-            id="name"
             placeholder="Enter your name"
+            required
           />
           <input
             type="email"
             name="email"
-            id="email"
             placeholder="Enter your email"
+            required
           />
         </div>
-        <textarea name="message" id="" placeholder="Write your message"></textarea>
+        <textarea
+          name="message"
+          placeholder="Write your message"
+          required
+        ></textarea>
         <button
           type="submit"
-          class="bg_primary block text-center py-4 px-8 rounded text-white font-bold mt-8 submit-button"
+          class="
+            bg_primary
+            block
+            text-center
+            py-4
+            px-8
+            rounded
+            text-white
+            font-bold
+            mt-8
+            submit-button
+          "
         >
           Submit
         </button>
@@ -41,9 +56,9 @@
     background-size: contain;
   }
 
-	.contact_page .contact-form {
-		min-width: 70%;
-	}
+  .contact_page .contact-form {
+    min-width: 70%;
+  }
 
   .contact_page .contact-form h2 {
     font-size: 36px;
@@ -57,35 +72,35 @@
     margin-bottom: 2rem;
   }
 
-
-  .contact_page .contact-form input, .contact_page .contact-form textarea {
+  .contact_page .contact-form input,
+  .contact_page .contact-form textarea {
     background: #ffffff;
     border: 2px solid #e8e8e8;
     box-shadow: 0px 20px 50px rgba(103, 103, 103, 0.05);
     border-radius: 15px;
-		padding: 1.5rem;
-		width: 100%;
+    padding: 1.5rem;
+    width: 100%;
   }
 
-	.contact_page .contact-form  input[type="text"] {
-		margin-right: 1.5rem;
-	}
-	
-	.contact_page .contact-form textarea {
-		height: 200px;
-	}
+  .contact_page .contact-form input[type='text'] {
+    margin-right: 1.5rem;
+  }
 
-	.contact_page .contact-form .submit-button:hover {
-		opacity: 0.7;
-	}
+  .contact_page .contact-form textarea {
+    height: 200px;
+  }
 
-	@media only screen and (max-width: 600px) {
-		.contact_page .contact-form h2 {
-			font-size: 30px
-		}
+  .contact_page .contact-form .submit-button:hover {
+    opacity: 0.7;
+  }
 
-		.contact_page .contact-form p {
-			font-size: 14px
-		}
-	}
+  @media only screen and (max-width: 600px) {
+    .contact_page .contact-form h2 {
+      font-size: 30px;
+    }
+
+    .contact_page .contact-form p {
+      font-size: 14px;
+    }
+  }
 </style>
