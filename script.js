@@ -2,7 +2,7 @@ let heroProgressBar = document.querySelector('.hero-progress-bar');
 
 var swiper = new Swiper('.swiper-container', {
   autoplay: {
-    delay: 3000,
+    delay: 4500,
     disableOnInteraction: false,
   },
   speed: 300,

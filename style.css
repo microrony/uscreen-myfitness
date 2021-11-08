@@ -48,6 +48,10 @@ body {
   font-size: 1.5rem;
 }
 
+.our_programs_title {
+	font-size: 2rem;
+}
+
 /* Top Menu Style  */
 
 .top_menu {
@@ -174,7 +178,7 @@ body {
   transition: width linear;
   transition-delay: unset;
   width: 100%;
-  transition-duration: 3s;
+  transition-duration: 4.5s;
 }
 
 .hero_banner--main .swiper-slide {
@@ -329,6 +333,12 @@ body {
 	}
 }
 @media (min-width: 768px) {
+
+	.our_programs_title {
+		font-size: 3.25rem;
+    line-height: 62px;
+	}
+
   .md_big_title {
     font-size: 3.25rem;
     line-height: 62px;
