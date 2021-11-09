@@ -97,86 +97,196 @@ var swiper = new Swiper('.about-page-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-	breakpoints: {
-		768: {
-			spaceBetween: 40,
-		},
-	},
+  breakpoints: {
+    768: {
+      spaceBetween: 40,
+    },
+  },
 });
 
 if (window.innerWidth < 640) {
-	var swiper = new Swiper('.members-swiper-container', {
-		autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  speed: 300,
-  loop: true,
-  grabCursor: true
-	});
+  var swiper = new Swiper('.members-swiper-container', {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 300,
+    loop: true,
+    grabCursor: true,
+  });
 }
 
 (function () {
-  const galleryTab = () => {
-      const galleryTabsList = document.querySelector('.gallery-tabs-list');
-      const galleryTabs = document.querySelectorAll('.gallery-tab');
-      const galleryContents = document.querySelectorAll('.gallery-tab-content');
+  const filterGalleryImages = () => {
+    const showAllTab = document.querySelector('.tab-show-all');
+    const travelTab = document.querySelector('.tab-travel');
+    const eventsTab = document.querySelector('.tab-events');
+    const studioTab = document.querySelector('.tab-studio');
+    const juniorsTab = document.querySelector('.tab-juniors');
 
-      if (galleryTabsList && galleryTabs && galleryContents) {
-        galleryTabsList.addEventListener('click', toggleTabs);
+		const allGalleryTabs = document.querySelectorAll('.gallery-tab');
+    const allFilteredDivs = document.querySelectorAll(
+      '.gallery-image-container'
+    );
 
-        function toggleTabs(e) {
-          if (e.target && e.target.nodeName === 'LI') {
-            //change tabs
-            for (let i = 0; i < galleryTabs.length; i++) {
-              galleryTabs[i].classList.remove('active');
-            }
-            e.target.classList.toggle('active');
+		console.log(allFilteredDivs)
 
-            //change contents
-            for (let i = 0; i < galleryContents.length; i++) {
-              galleryContents[i].classList.remove('active');
-            }
+    if (
+      showAllTab &&
+      travelTab &&
+      eventsTab &&
+      studioTab &&
+      juniorsTab &&
+      allFilteredDivs &&
+			allGalleryTabs
+    ) {
+      // Turns node list into an array
+      const allGalleryTabsArray =  Array.from(allGalleryTabs);
+      const allFilteredDivsArray = Array.from(allFilteredDivs);
 
-            const tabID = `#${e.target.dataset.tabId}`;
+      showAllTab.addEventListener('click', showAll);
+      function showAll() {
 
-            document.querySelector(tabID).classList.toggle('active');
-          }
+				allGalleryTabsArray.forEach(div => {
+					div.classList.remove('active');
+
+					if(div.dataset.all) {
+						div.classList.add('active');
+					}
+				});
+
+        allFilteredDivsArray.forEach(div => {
+          div.classList.remove('remove');
+          div.classList.add('show');
+        });
       }
+
+      travelTab.addEventListener('click', filterTravelImages);
+      function filterTravelImages() {
+
+				allGalleryTabsArray.forEach(div => {
+					div.classList.remove('active');
+
+					if(div.dataset.travel) {
+						div.classList.add('active');
+					}
+				});
+
+				allFilteredDivsArray.forEach(div => {
+					div.classList.remove('show');
+					div.classList.remove('remove');
+			
+					if (div.dataset.travel) {
+						div.classList.add('show');
+					} else {
+						div.classList.add('remove');
+					}
+        });
+      }
+
+			eventsTab.addEventListener('click', filterEventsImages);
+      function filterEventsImages() {
+
+				allGalleryTabsArray.forEach(div => {
+					div.classList.remove('active');
+
+					if(div.dataset.events) {
+						div.classList.add('active');
+					}
+				});
+
+				allFilteredDivsArray.forEach(div => {
+					div.classList.remove('show');
+					div.classList.remove('remove');
+			
+					if (div.dataset.events) {
+						div.classList.add('show');
+					} else {
+						div.classList.add('remove');
+					}
+        });
+      }
+
+			studioTab.addEventListener('click', filterStudioImages);
+      function filterStudioImages() {
+
+				allGalleryTabsArray.forEach(div => {
+					div.classList.remove('active');
+
+					if(div.dataset.studio) {
+						div.classList.add('active');
+					}
+				});
+
+				allFilteredDivsArray.forEach(div => {
+					div.classList.remove('show');
+					div.classList.remove('remove');
+			
+					if (div.dataset.studio) {
+						div.classList.add('show');
+					} else {
+						div.classList.add('remove');
+					}
+        });
+      }
+
+			juniorsTab.addEventListener('click', filterJuniorsImages);
+      function filterJuniorsImages() {
+
+				allGalleryTabsArray.forEach(div => {
+					div.classList.remove('active');
+
+					if(div.dataset.juniors) {
+						div.classList.add('active');
+					}
+				});
+
+				allFilteredDivsArray.forEach(div => {
+					div.classList.remove('show');
+					div.classList.remove('remove');
+			
+					if (div.dataset.juniors) {
+						div.classList.add('show');
+					} else {
+						div.classList.add('remove');
+					}
+        });
+      }
+
     }
   };
 
-  galleryTab();
+  filterGalleryImages();
 
   const galleryModal = () => {
     if (window.innerWidth > 600) {
-    const galleryModals = document.querySelectorAll('.gallery-modal-btn');
-    const galleryCloseButtons = document.querySelectorAll('.modal-close-btn');
-    const galleryModalOverlays = document.querySelectorAll(
-      '.gallery-modal-overlay'
-    );
+      const galleryModals = document.querySelectorAll('.gallery-modal-btn');
+      const galleryCloseButtons = document.querySelectorAll('.modal-close-btn');
+      const galleryModalOverlays = document.querySelectorAll(
+        '.gallery-modal-overlay'
+      );
 
-    if (galleryModals && galleryCloseButtons && galleryModalOverlays) {
-      const openModal = e => {
-        e.currentTarget.parentNode.children[1].classList.toggle('is-visible');
-        e.currentTarget.parentNode.children[2].classList.toggle('is-visible');
-      };
+      if (galleryModals && galleryCloseButtons && galleryModalOverlays) {
+        const openModal = e => {
+          e.currentTarget.parentNode.children[1].classList.toggle('is-visible');
+          e.currentTarget.parentNode.children[2].classList.toggle('is-visible');
+        };
 
-      const closeModal = e => {
-        e.currentTarget.parentNode.parentNode.children[1].classList.toggle(
-          'is-visible'
-        );
-        e.currentTarget.parentNode.parentNode.children[2].classList.toggle(
-          'is-visible'
-        );
-      };
+        const closeModal = e => {
+          e.currentTarget.parentNode.parentNode.children[1].classList.toggle(
+            'is-visible'
+          );
+          e.currentTarget.parentNode.parentNode.children[2].classList.toggle(
+            'is-visible'
+          );
+        };
 
-      for (let i = 0; i < galleryModals.length; i++) {
-        galleryModals[i].addEventListener('click', e => openModal(e));
-        galleryModalOverlays[i].addEventListener('click', e => openModal(e));
-        galleryCloseButtons[i].addEventListener('click', e => closeModal(e));
+        for (let i = 0; i < galleryModals.length; i++) {
+          galleryModals[i].addEventListener('click', e => openModal(e));
+          galleryModalOverlays[i].addEventListener('click', e => openModal(e));
+          galleryCloseButtons[i].addEventListener('click', e => closeModal(e));
+        }
       }
-    }
     }
   };
 
