@@ -104,14 +104,14 @@
     </a>
     {% endunless %}
 		
-		{% when '/catalog' %} {% if user.subscriber? %}
+		{% when '/catalog' %} {% unless user.guest %}
     <a
       href="{{ link.url | link }}"
       class="top_menu--link py-3 d-none d-lg-inline-block"
     >
       {{ link.title }}
     </a>
-    {% endif %}
+    {% endunless %}
 		
 		{% when '/sign_out' %} {% unless user.guest %}
     <a
@@ -123,14 +123,14 @@
     {% endunless %} 
 
 
-		{% when '/pages/explore' %} {% unless user.subscriber? %}
+		{% when '/pages/explore' %} {% if user.guest %}
     <a
       href="{{ link.url | link }}"
       class="top_menu--link py-2 d-none d-lg-inline-block"
     >
       {{ link.title }}
     </a>
-    {% endunless %}
+    {% endif %}
 		
 		{% when '/' %} {% if user.guest %}
     <a

@@ -46,14 +46,27 @@
         >
           {{ link.title }}
         </a>
-        {% endif %} {% when '/dashboard' %} {% unless user.guest %}
+        {% endif %} 
+				
+				{% when '/dashboard' %} {% unless user.guest %}
         <a
           href="{{ link.url | link }}"
           class="footer--link py-2 d-md-inline-block"
         >
           {{ link.title }}
         </a>
-        {% endunless %} {% when '/sign_out' %} {% unless user.guest %}
+        {% endunless %}
+
+				{% when '/catalog' %} {% unless user.guest %}
+        <a
+          href="{{ link.url | link }}"
+          class="footer--link py-2 d-md-inline-block"
+        >
+          {{ link.title }}
+        </a>
+        {% endunless %}
+				
+				{% when '/sign_out' %} {% unless user.guest %}
         <a
           href="{{ link.url | link }}"
           class="footer--link py-2 d-md-inline-block"
@@ -63,7 +76,7 @@
         {% endunless %}
         
         
-        {% when '/catalog' %} {% if user.subscriber? %}
+        {% when '/pages/explore' %} {% if user.guest %}
         <a
           href="{{ link.url | link }}"
           class="footer--link py-2 d-md-inline-block"
@@ -71,18 +84,15 @@
           {{ link.title }}
         </a>
         {% endif %}
-        
-        {% when '/pages/explore' %} {% unless user.subscriber? %}
+
+				{% when '/' %} {% if user.guest %}
         <a
           href="{{ link.url | link }}"
           class="footer--link py-2 d-md-inline-block"
         >
           {{ link.title }}
         </a>
-        {% endunless %}
-        
-        
-        
+        {% endif %}
         
         {% else %}
         <a
