@@ -97,58 +97,86 @@ var swiper = new Swiper('.about-page-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints: {
-    768: {
-      spaceBetween: 40,
-    },
-  },
+	breakpoints: {
+		768: {
+			spaceBetween: 40,
+		},
+	},
 });
 
 if (window.innerWidth < 640) {
-  var swiper = new Swiper('.members-swiper-container', {
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    speed: 300,
-    loop: true,
-    grabCursor: true,
-  });
+	var swiper = new Swiper('.members-swiper-container', {
+		autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 300,
+  loop: true,
+  grabCursor: true
+	});
 }
 
-var tabs = new Tabby('[data-gallery-tabs]');
-
 (function () {
+  const galleryTab = () => {
+      const galleryTabsList = document.querySelector('.gallery-tabs-list');
+      const galleryTabs = document.querySelectorAll('.gallery-tab');
+      const galleryContents = document.querySelectorAll('.gallery-tab-content');
+
+      if (galleryTabsList && galleryTabs && galleryContents) {
+        galleryTabsList.addEventListener('click', toggleTabs);
+
+        function toggleTabs(e) {
+          if (e.target && e.target.nodeName === 'LI') {
+            //change tabs
+            for (let i = 0; i < galleryTabs.length; i++) {
+              galleryTabs[i].classList.remove('active');
+            }
+            e.target.classList.toggle('active');
+
+            //change contents
+            for (let i = 0; i < galleryContents.length; i++) {
+              galleryContents[i].classList.remove('active');
+            }
+
+            const tabID = `#${e.target.dataset.tabId}`;
+
+            document.querySelector(tabID).classList.toggle('active');
+          }
+      }
+    }
+  };
+
+  galleryTab();
 
   const galleryModal = () => {
     if (window.innerWidth > 600) {
-      const galleryModals = document.querySelectorAll('.gallery-modal-btn');
-      const galleryCloseButtons = document.querySelectorAll('.modal-close-btn');
-      const galleryModalOverlays = document.querySelectorAll(
-        '.gallery-modal-overlay'
-      );
+    const galleryModals = document.querySelectorAll('.gallery-modal-btn');
+    const galleryCloseButtons = document.querySelectorAll('.modal-close-btn');
+    const galleryModalOverlays = document.querySelectorAll(
+      '.gallery-modal-overlay'
+    );
 
-      if (galleryModals && galleryCloseButtons && galleryModalOverlays) {
-        const openModal = e => {
-          e.currentTarget.parentNode.children[1].classList.toggle('is-visible');
-          e.currentTarget.parentNode.children[2].classList.toggle('is-visible');
-        };
+    if (galleryModals && galleryCloseButtons && galleryModalOverlays) {
+      const openModal = e => {
+        e.currentTarget.parentNode.children[1].classList.toggle('is-visible');
+        e.currentTarget.parentNode.children[2].classList.toggle('is-visible');
+      };
 
-        const closeModal = e => {
-          e.currentTarget.parentNode.parentNode.children[1].classList.toggle(
-            'is-visible'
-          );
-          e.currentTarget.parentNode.parentNode.children[2].classList.toggle(
-            'is-visible'
-          );
-        };
+      const closeModal = e => {
+        e.currentTarget.parentNode.parentNode.children[1].classList.toggle(
+          'is-visible'
+        );
+        e.currentTarget.parentNode.parentNode.children[2].classList.toggle(
+          'is-visible'
+        );
+      };
 
-        for (let i = 0; i < galleryModals.length; i++) {
-          galleryModals[i].addEventListener('click', e => openModal(e));
-          galleryModalOverlays[i].addEventListener('click', e => openModal(e));
-          galleryCloseButtons[i].addEventListener('click', e => closeModal(e));
-        }
+      for (let i = 0; i < galleryModals.length; i++) {
+        galleryModals[i].addEventListener('click', e => openModal(e));
+        galleryModalOverlays[i].addEventListener('click', e => openModal(e));
+        galleryCloseButtons[i].addEventListener('click', e => closeModal(e));
       }
+    }
     }
   };
 

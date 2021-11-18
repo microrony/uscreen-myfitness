@@ -7,7 +7,7 @@
           <span class="color_primary">May Yang’s </span>Gallery
         </h1>
         <nav>
-          <ul data-gallery-tabs
+          <ul
             class="
               text-center
               md:text-left
@@ -21,16 +21,16 @@
               lg:my-12
             "
           >
-            <li class="gallery-tab"><a data-tabby-default href="#tab1">All</a></li>
-            <li class="gallery-tab"><a href="#tab2">MY Travel</a></li>
-            <li class="gallery-tab"><a href="#tab3">MY Events</a></li>
-            <li class="gallery-tab"><a href="#tab4">MY Studio</a></li>
-            <li class="gallery-tab"><a href="#tab5">MY Juniors</a></li>
+            <li class="gallery-tab active" data-tab-id="tab1">All</li>
+            <li class="gallery-tab" data-tab-id="tab2">MY Travel</li>
+            <li class="gallery-tab" data-tab-id="tab3">MY Events</li>
+            <li class="gallery-tab" data-tab-id="tab4">MY Studio</li>
+            <li class="gallery-tab" data-tab-id="tab5">MY Juniors</li>
           </ul>
         </nav>
 
         <div class="content-section">
-          <div class="gallery-tab-content" id="tab1">
+          <div class="gallery-tab-content active" id="tab1">
 
             <div
               class="
@@ -5558,25 +5558,19 @@
     margin-right: 4rem;
     cursor: pointer;
     list-style: none;
+    color: #76797e;
   }
 
   .gallery_page .gallery-tab:last-child {
     margin-right: 0;
   }
 
-	.gallery_page .gallery-tab a {
-		color: #76797e;
-		border: none;
-		outline: none;
-		text-decoration: none;
-	}
-
-  .gallery-tab a[aria-selected="true"] {
+  .gallery-tab.active {
     color: #2bbcbe;
     position: relative;
   }
 
-  .gallery-tab a[aria-selected="true"]:after {
+  .gallery-tab.active:after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -5587,7 +5581,48 @@
     border-radius: 2px;
   }
 
-	/* Gallery Modal */
+  .gallery-tab-content {
+    display: none;
+    opacity: 0;
+
+    -webkit-animation: display-none-transition 1s ease;
+    animation: display-none-transition 1s ease;
+  }
+
+  .content-section .active {
+    display: block;
+    opacity: 1;
+  }
+
+  @keyframes display-none-transition {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes display-none-transition {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
 	.gallery-image-container.show {
 		display: block;
